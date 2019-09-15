@@ -1,0 +1,467 @@
+INFO:root:gpu device = cuda:0
+INFO:root:args = {'data': './data', 'set': 'cifar10', 'batch_size': 32, 'learning_rate': 0.1, 'learning_rate_min': 0.001, 'momentum': 0.9, 'weight_decay': 0.0003, 'report_freq': 50, 'gpu': 'cuda:0', 'epochs': 20, 'init_channels': 8, 'layers': 4, 'model_path': 'saved_models', 'cutout': False, 'cutout_length': 16, 'drop_path_prob': 0.3, 'save': './EXP5/EXP-20190915-012632-97', 'seed': 97, 'grad_clip': 5, 'train_portion': 0.5, 'unrolled': False, 'arch_learning_rate': 0.0006, 'arch_weight_decay': 0.001}
+INFO:root:param size = 0.056538MB
+/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:82: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule.See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+INFO:root:epoch 0 lr 9.939057e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+/home/rkohli/aml-project/src/train_search.py:137: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  nn.utils.clip_grad_norm(model.parameters(), args['grad_clip'])
+INFO:root:train 000 2.322464e+00 0.000000 40.625000
+INFO:root:train 050 2.059407e+00 25.428922 75.796569
+INFO:root:train 100 1.862127e+00 33.879950 82.549505
+INFO:root:train 150 1.714252e+00 39.735099 85.906457
+INFO:root:train 200 1.594396e+00 44.667289 87.950871
+INFO:root:train 250 1.485192e+00 48.991534 89.566733
+INFO:root:train 300 1.387474e+00 52.823920 90.832641
+INFO:root:train 350 1.305316e+00 55.902778 91.800214
+INFO:root:train 400 1.221981e+00 58.884040 92.565461
+INFO:root:train 450 1.155427e+00 61.301275 93.188747
+INFO:root:train 500 1.095416e+00 63.510479 93.725050
+INFO:root:train 550 1.040746e+00 65.409483 94.181034
+INFO:root:train 600 9.964074e-01 66.956115 94.535150
+INFO:root:train 650 9.511128e-01 68.553187 94.882873
+INFO:root:train 700 9.083494e-01 70.100749 95.185449
+INFO:root:train 750 8.766224e-01 71.217543 95.451897
+INFO:root:train 800 8.465289e-01 72.253433 95.696785
+INFO:root:train 850 8.199263e-01 73.207991 95.890864
+INFO:root:train 900 7.934698e-01 74.060072 96.098085
+INFO:root:train_acc 74.786667
+INFO:root:epoch 1 lr 9.757730e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 3.249119e-01 87.500000 100.000000
+INFO:root:train 050 2.777565e-01 91.299020 99.448529
+INFO:root:train 100 2.687049e-01 91.646040 99.597772
+INFO:root:train 150 2.833756e-01 91.100993 99.524007
+INFO:root:train 200 2.787999e-01 91.262438 99.580224
+INFO:root:train 250 2.696536e-01 91.633466 99.601594
+INFO:root:train 300 2.607388e-01 91.798173 99.667774
+INFO:root:train 350 2.590755e-01 91.915954 99.652778
+INFO:root:train 400 2.595901e-01 91.996571 99.610349
+INFO:root:train 450 2.590023e-01 92.024667 99.611973
+INFO:root:train 500 2.593840e-01 92.028443 99.607036
+INFO:root:train 550 2.568800e-01 92.048548 99.620009
+INFO:root:train 600 2.552931e-01 92.096506 99.615225
+INFO:root:train 650 2.521191e-01 92.204301 99.620776
+INFO:root:train 700 2.500524e-01 92.269971 99.621077
+INFO:root:train 750 2.448856e-01 92.435087 99.642144
+INFO:root:train 800 2.420571e-01 92.517166 99.652778
+INFO:root:train 850 2.407034e-01 92.585928 99.643801
+INFO:root:train 900 2.370494e-01 92.744173 99.656632
+INFO:root:train_acc 92.780000
+INFO:root:epoch 2 lr 9.460482e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 8.363003e-02 100.000000 100.000000
+INFO:root:train 050 1.640171e-01 95.220588 99.938725
+INFO:root:train 100 1.854624e-01 94.585396 99.721535
+INFO:root:train 150 1.866309e-01 94.619205 99.772351
+INFO:root:train 200 1.872144e-01 94.605100 99.735697
+INFO:root:train 250 1.840812e-01 94.646414 99.750996
+INFO:root:train 300 1.802237e-01 94.632475 99.771595
+INFO:root:train 350 1.770512e-01 94.747151 99.768519
+INFO:root:train 400 1.746891e-01 94.685162 99.789589
+INFO:root:train 450 1.743887e-01 94.609202 99.778271
+INFO:root:train 500 1.726793e-01 94.660679 99.787924
+INFO:root:train 550 1.701756e-01 94.731171 99.801497
+INFO:root:train 600 1.691282e-01 94.769135 99.797213
+INFO:root:train 650 1.678385e-01 94.782066 99.803187
+INFO:root:train 700 1.681185e-01 94.761947 99.803852
+INFO:root:train 750 1.719772e-01 94.640479 99.800266
+INFO:root:train 800 1.718829e-01 94.635612 99.793227
+INFO:root:train 850 1.720810e-01 94.605611 99.779671
+INFO:root:train 900 1.713672e-01 94.641371 99.781493
+INFO:root:train_acc 94.653333
+INFO:root:epoch 3 lr 9.054634e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 1.860965e-01 90.625000 100.000000
+INFO:root:train 050 1.275747e-01 96.568627 99.816176
+INFO:root:train 100 1.223166e-01 96.658416 99.845297
+INFO:root:train 150 1.314643e-01 96.316225 99.855132
+INFO:root:train 200 1.340642e-01 96.004353 99.844527
+INFO:root:train 250 1.416795e-01 95.829183 99.813247
+INFO:root:train 300 1.413592e-01 95.930233 99.823505
+INFO:root:train 350 1.401026e-01 95.904558 99.821937
+INFO:root:train 400 1.397449e-01 95.885287 99.836347
+INFO:root:train 450 1.395809e-01 95.884146 99.840632
+INFO:root:train 500 1.402705e-01 95.820858 99.837824
+INFO:root:train 550 1.406573e-01 95.786071 99.824183
+INFO:root:train 600 1.411236e-01 95.767471 99.818012
+INFO:root:train 650 1.408827e-01 95.737327 99.822389
+INFO:root:train 700 1.382470e-01 95.814016 99.835057
+INFO:root:train 750 1.380018e-01 95.826398 99.833555
+INFO:root:train 800 1.388907e-01 95.767010 99.820537
+INFO:root:train 850 1.409551e-01 95.666863 99.820065
+INFO:root:train 900 1.405517e-01 95.654134 99.830050
+INFO:root:train_acc 95.696667
+INFO:root:epoch 4 lr 8.550179e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 8.732681e-02 96.875000 100.000000
+INFO:root:train 050 1.028913e-01 97.058824 99.816176
+INFO:root:train 100 1.153654e-01 96.565594 99.845297
+INFO:root:train 150 1.205669e-01 96.171358 99.855132
+INFO:root:train 200 1.230660e-01 96.082090 99.875622
+INFO:root:train 250 1.172880e-01 96.302291 99.887948
+INFO:root:train 300 1.200757e-01 96.189784 99.896179
+INFO:root:train 350 1.184489e-01 96.296296 99.893162
+INFO:root:train 400 1.150807e-01 96.423005 99.906484
+INFO:root:train 450 1.180345e-01 96.306818 99.882206
+INFO:root:train 500 1.178147e-01 96.326098 99.881487
+INFO:root:train 550 1.196845e-01 96.285163 99.875227
+INFO:root:train 600 1.197254e-01 96.287438 99.875208
+INFO:root:train 650 1.209574e-01 96.289363 99.870392
+INFO:root:train 700 1.225318e-01 96.233060 99.866262
+INFO:root:train 750 1.223636e-01 96.246671 99.866844
+INFO:root:train 800 1.234141e-01 96.223471 99.859551
+INFO:root:train 850 1.227596e-01 96.269095 99.860458
+INFO:root:train 900 1.225676e-01 96.288846 99.857797
+INFO:root:train_acc 96.276667
+INFO:root:epoch 5 lr 7.959537e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 7.400790e-02 96.875000 100.000000
+INFO:root:train 050 1.174144e-01 96.813725 99.877451
+INFO:root:train 100 1.122144e-01 96.844059 99.845297
+INFO:root:train 150 1.072845e-01 96.916391 99.875828
+INFO:root:train 200 1.017350e-01 97.092662 99.906716
+INFO:root:train 250 9.840668e-02 97.173805 99.900398
+INFO:root:train 300 1.005651e-01 97.093023 99.906561
+INFO:root:train 350 1.037179e-01 96.901709 99.910969
+INFO:root:train 400 1.037929e-01 96.890586 99.922070
+INFO:root:train 450 1.050316e-01 96.805710 99.923780
+INFO:root:train 500 1.038730e-01 96.850050 99.925150
+INFO:root:train 550 1.041521e-01 96.840971 99.926270
+INFO:root:train 600 1.038586e-01 96.859401 99.916805
+INFO:root:train 650 1.027353e-01 96.899002 99.918395
+INFO:root:train 700 1.030883e-01 96.910663 99.915300
+INFO:root:train 750 1.023205e-01 96.895806 99.916778
+INFO:root:train 800 1.036038e-01 96.867197 99.906367
+INFO:root:train 850 1.042459e-01 96.838278 99.908196
+INFO:root:train 900 1.035320e-01 96.847253 99.913291
+INFO:root:train_acc 96.833333
+INFO:root:epoch 6 lr 7.297253e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 2.624914e-01 90.625000 100.000000
+INFO:root:train 050 9.588923e-02 97.120098 100.000000
+INFO:root:train 100 9.580380e-02 96.967822 100.000000
+INFO:root:train 150 8.334784e-02 97.392384 100.000000
+INFO:root:train 200 8.390055e-02 97.527985 99.984453
+INFO:root:train 250 8.627242e-02 97.422809 99.962649
+INFO:root:train 300 8.736292e-02 97.300664 99.948090
+INFO:root:train 350 8.668716e-02 97.311254 99.946581
+INFO:root:train 400 8.948899e-02 97.264651 99.937656
+INFO:root:train 450 8.955796e-02 97.318459 99.930710
+INFO:root:train 500 9.096556e-02 97.299152 99.918912
+INFO:root:train 550 9.334096e-02 97.198276 99.909256
+INFO:root:train 600 9.523900e-02 97.124584 99.911606
+INFO:root:train 650 9.666292e-02 97.047811 99.903994
+INFO:root:train 700 9.702235e-02 97.071148 99.901926
+INFO:root:train 750 9.661172e-02 97.058089 99.895972
+INFO:root:train 800 9.700776e-02 97.050562 99.894663
+INFO:root:train 850 9.822056e-02 96.992509 99.897180
+INFO:root:train 900 9.888324e-02 96.968646 99.899417
+INFO:root:train_acc 96.993333
+INFO:root:epoch 7 lr 6.579634e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 3.501774e-02 100.000000 100.000000
+INFO:root:train 050 7.377293e-02 97.549020 100.000000
+INFO:root:train 100 7.047715e-02 97.710396 99.969059
+INFO:root:train 150 7.231884e-02 97.620033 99.937914
+INFO:root:train 200 7.481830e-02 97.636816 99.953358
+INFO:root:train 250 7.177158e-02 97.709163 99.962649
+INFO:root:train 300 7.321476e-02 97.643272 99.968854
+INFO:root:train 350 7.413766e-02 97.667379 99.964387
+INFO:root:train 400 7.682511e-02 97.560786 99.953242
+INFO:root:train 450 7.941237e-02 97.560976 99.937639
+INFO:root:train 500 8.059971e-02 97.536178 99.925150
+INFO:root:train 550 8.206089e-02 97.504537 99.926270
+INFO:root:train 600 8.178343e-02 97.540557 99.922005
+INFO:root:train 650 8.047427e-02 97.575845 99.927995
+INFO:root:train 700 8.057629e-02 97.583809 99.933131
+INFO:root:train 750 8.281288e-02 97.524134 99.916778
+INFO:root:train 800 8.434491e-02 97.491417 99.910268
+INFO:root:train 850 8.579604e-02 97.451528 99.915541
+INFO:root:train 900 8.491856e-02 97.509711 99.920228
+INFO:root:train_acc 97.516667
+INFO:root:epoch 8 lr 5.824351e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 3.603294e-02 100.000000 100.000000
+INFO:root:train 050 8.373927e-02 97.610294 100.000000
+INFO:root:train 100 8.564311e-02 97.586634 100.000000
+INFO:root:train 150 8.320048e-02 97.640728 99.958609
+INFO:root:train 200 7.796042e-02 97.807836 99.937811
+INFO:root:train 250 7.577779e-02 97.871016 99.925299
+INFO:root:train 300 7.332082e-02 97.975498 99.937708
+INFO:root:train 350 7.344266e-02 97.970085 99.937678
+INFO:root:train 400 7.283182e-02 97.919264 99.945449
+INFO:root:train 450 7.486915e-02 97.817350 99.937639
+INFO:root:train 500 7.625312e-02 97.760729 99.937625
+INFO:root:train 550 7.733610e-02 97.720054 99.943285
+INFO:root:train 600 7.881735e-02 97.686148 99.942804
+INFO:root:train 650 7.878277e-02 97.676651 99.937596
+INFO:root:train 700 8.002191e-02 97.597183 99.937589
+INFO:root:train 750 8.083512e-02 97.561585 99.937583
+INFO:root:train 800 8.195929e-02 97.518727 99.933677
+INFO:root:train 850 8.161272e-02 97.539659 99.926557
+INFO:root:train 900 8.126284e-02 97.544395 99.930633
+INFO:root:train_acc 97.560000
+INFO:root:epoch 9 lr 5.050000e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 7.633038e-02 100.000000 100.000000
+INFO:root:train 050 6.800329e-02 98.100490 100.000000
+INFO:root:train 100 6.510174e-02 98.174505 99.969059
+INFO:root:train 150 6.302178e-02 98.220199 99.979305
+INFO:root:train 200 6.365882e-02 98.243159 99.984453
+INFO:root:train 250 6.762050e-02 98.095120 99.975100
+INFO:root:train 300 6.710144e-02 98.110465 99.979236
+INFO:root:train 350 6.701568e-02 98.094729 99.973291
+INFO:root:train 400 6.505223e-02 98.129676 99.976621
+INFO:root:train 450 6.293468e-02 98.198448 99.979213
+INFO:root:train 500 6.313421e-02 98.216068 99.981287
+INFO:root:train 550 6.404146e-02 98.207804 99.977314
+INFO:root:train 600 6.524354e-02 98.143719 99.979201
+INFO:root:train 650 6.675086e-02 98.084677 99.971198
+INFO:root:train 700 6.647775e-02 98.100927 99.968795
+INFO:root:train 750 6.684377e-02 98.077563 99.966711
+INFO:root:train 800 6.778350e-02 98.010300 99.964888
+INFO:root:train 850 6.863899e-02 97.991334 99.966951
+INFO:root:train 900 6.874646e-02 97.981410 99.968785
+INFO:root:train_acc 97.993333
+INFO:root:epoch 10 lr 4.275649e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 4.945569e-02 100.000000 100.000000
+INFO:root:train 050 5.048148e-02 98.835784 100.000000
+INFO:root:train 100 4.783325e-02 98.824257 100.000000
+INFO:root:train 150 5.128663e-02 98.551325 99.979305
+INFO:root:train 200 5.191251e-02 98.476368 99.984453
+INFO:root:train 250 5.374169e-02 98.468625 99.975100
+INFO:root:train 300 5.561670e-02 98.401163 99.979236
+INFO:root:train 350 5.656632e-02 98.344017 99.982194
+INFO:root:train 400 5.582284e-02 98.355673 99.984414
+INFO:root:train 450 5.617944e-02 98.337029 99.979213
+INFO:root:train 500 5.639926e-02 98.328343 99.981287
+INFO:root:train 550 5.644355e-02 98.326906 99.982985
+INFO:root:train 600 5.684534e-02 98.294509 99.979201
+INFO:root:train 650 5.692077e-02 98.315092 99.980799
+INFO:root:train 700 5.862874e-02 98.248039 99.968795
+INFO:root:train 750 5.870948e-02 98.248169 99.970872
+INFO:root:train 800 5.830167e-02 98.275593 99.968789
+INFO:root:train 850 5.881008e-02 98.263073 99.966951
+INFO:root:train 900 5.918119e-02 98.276221 99.968785
+INFO:root:train_acc 98.243333
+INFO:root:epoch 11 lr 3.520366e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 1.799856e-02 100.000000 100.000000
+INFO:root:train 050 5.909337e-02 98.039216 100.000000
+INFO:root:train 100 5.185860e-02 98.329208 99.969059
+INFO:root:train 150 4.853563e-02 98.551325 99.958609
+INFO:root:train 200 4.600896e-02 98.694030 99.953358
+INFO:root:train 250 4.846471e-02 98.630478 99.937749
+INFO:root:train 300 4.833022e-02 98.629568 99.948090
+INFO:root:train 350 4.794554e-02 98.637821 99.946581
+INFO:root:train 400 4.885202e-02 98.581671 99.945449
+INFO:root:train 450 4.868009e-02 98.600333 99.951497
+INFO:root:train 500 5.030495e-02 98.584082 99.943862
+INFO:root:train 550 4.973409e-02 98.633167 99.948956
+INFO:root:train 600 4.933561e-02 98.611689 99.953203
+INFO:root:train 650 4.965717e-02 98.583909 99.956797
+INFO:root:train 700 5.030385e-02 98.533345 99.955421
+INFO:root:train 750 5.022051e-02 98.560253 99.958389
+INFO:root:train 800 4.997805e-02 98.560393 99.957085
+INFO:root:train 850 4.948973e-02 98.593566 99.959606
+INFO:root:train 900 4.950178e-02 98.612653 99.961848
+INFO:root:train_acc 98.633333
+INFO:root:epoch 12 lr 2.802747e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 4.431471e-03 100.000000 100.000000
+INFO:root:train 050 3.163904e-02 99.264706 100.000000
+INFO:root:train 100 3.249871e-02 99.257426 100.000000
+INFO:root:train 150 3.324797e-02 99.213576 100.000000
+INFO:root:train 200 3.325807e-02 99.175995 100.000000
+INFO:root:train 250 3.403277e-02 99.128486 100.000000
+INFO:root:train 300 3.356626e-02 99.159053 100.000000
+INFO:root:train 350 3.323737e-02 99.136396 100.000000
+INFO:root:train 400 3.330494e-02 99.134975 99.992207
+INFO:root:train 450 3.358155e-02 99.126940 99.993071
+INFO:root:train 500 3.391619e-02 99.095559 99.993762
+INFO:root:train 550 3.495050e-02 99.052858 99.994328
+INFO:root:train 600 3.558736e-02 99.048461 99.994800
+INFO:root:train 650 3.631889e-02 99.011137 99.995200
+INFO:root:train 700 3.698341e-02 98.992511 99.995542
+INFO:root:train 750 3.743713e-02 99.001332 99.995839
+INFO:root:train 800 3.839289e-02 98.966136 99.996099
+INFO:root:train 850 3.863836e-02 98.964454 99.996328
+INFO:root:train 900 3.895459e-02 98.959489 99.989595
+INFO:root:train_acc 98.940000
+INFO:root:epoch 13 lr 2.140463e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 3.583950e-02 96.875000 100.000000
+INFO:root:train 050 2.916932e-02 99.203431 100.000000
+INFO:root:train 100 2.921298e-02 99.288366 100.000000
+INFO:root:train 150 3.207609e-02 99.130795 99.979305
+INFO:root:train 200 3.187362e-02 99.082711 99.984453
+INFO:root:train 250 3.070280e-02 99.178287 99.987550
+INFO:root:train 300 2.981940e-02 99.221346 99.989618
+INFO:root:train 350 2.991443e-02 99.234330 99.991097
+INFO:root:train 400 2.917702e-02 99.244077 99.992207
+INFO:root:train 450 2.886785e-02 99.244734 99.993071
+INFO:root:train 500 2.804829e-02 99.282685 99.993762
+INFO:root:train 550 2.882811e-02 99.251361 99.994328
+INFO:root:train 600 2.879658e-02 99.266847 99.994800
+INFO:root:train 650 2.927270e-02 99.222350 99.995200
+INFO:root:train 700 2.899842e-02 99.228780 99.995542
+INFO:root:train 750 2.876649e-02 99.246838 99.995839
+INFO:root:train 800 2.869711e-02 99.247035 99.996099
+INFO:root:train 850 2.922330e-02 99.236193 99.996328
+INFO:root:train 900 2.878996e-02 99.250832 99.996532
+INFO:root:train_acc 99.250000
+INFO:root:epoch 14 lr 1.549821e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 1.280269e-02 100.000000 100.000000
+INFO:root:train 050 2.198163e-02 99.325980 100.000000
+INFO:root:train 100 1.985071e-02 99.443069 100.000000
+INFO:root:train 150 2.016542e-02 99.461921 100.000000
+INFO:root:train 200 2.049005e-02 99.471393 100.000000
+INFO:root:train 250 1.922400e-02 99.551793 100.000000
+INFO:root:train 300 1.919632e-02 99.563953 99.989618
+INFO:root:train 350 1.947774e-02 99.563746 99.991097
+INFO:root:train 400 1.904602e-02 99.594763 99.992207
+INFO:root:train 450 1.937563e-02 99.598115 99.993071
+INFO:root:train 500 2.001457e-02 99.569611 99.993762
+INFO:root:train 550 2.008343e-02 99.557623 99.994328
+INFO:root:train 600 1.997475e-02 99.563228 99.994800
+INFO:root:train 650 2.015907e-02 99.563172 99.995200
+INFO:root:train 700 1.978911e-02 99.567582 99.995542
+INFO:root:train 750 1.977294e-02 99.567244 99.995839
+INFO:root:train 800 1.963022e-02 99.563046 99.992197
+INFO:root:train 850 1.999843e-02 99.540981 99.992656
+INFO:root:train 900 1.996715e-02 99.545644 99.993063
+INFO:root:train_acc 99.546667
+INFO:root:epoch 15 lr 1.045366e-02
+INFO:root:genotype = Genotype(normal=[('dil_conv_5x5', 1), ('max_pool_3x3', 0), ('sep_conv_3x3', 2), ('sep_conv_3x3', 0), ('skip_connect', 2), ('skip_connect', 0), ('skip_connect', 3), ('skip_connect', 0)], normal_concat=range(2, 6), reduce=[('max_pool_3x3', 1), ('max_pool_3x3', 0), ('sep_conv_5x5', 1), ('avg_pool_3x3', 0), ('sep_conv_3x3', 3), ('skip_connect', 1), ('sep_conv_3x3', 1), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 8.043677e-03 100.000000 100.000000
+INFO:root:train 050 1.197822e-02 100.000000 100.000000
+INFO:root:train 100 1.301244e-02 99.876238 100.000000
+INFO:root:train 150 1.364048e-02 99.793046 100.000000
+INFO:root:train 200 1.398043e-02 99.782338 100.000000
+INFO:root:train 250 1.426694e-02 99.788347 100.000000
+INFO:root:train 300 1.368566e-02 99.823505 100.000000
+INFO:root:train 350 1.342731e-02 99.830840 100.000000
+INFO:root:train 400 1.334230e-02 99.820761 100.000000
+INFO:root:train 450 1.288045e-02 99.812916 100.000000
+INFO:root:train 500 1.288810e-02 99.800399 100.000000
+INFO:root:train 550 1.265922e-02 99.807169 100.000000
+INFO:root:train 600 1.309944e-02 99.781614 100.000000
+INFO:root:train 650 1.315165e-02 99.779186 100.000000
+INFO:root:train 700 1.317884e-02 99.759272 100.000000
+INFO:root:train 750 1.321918e-02 99.762816 100.000000
+INFO:root:train 800 1.353990e-02 99.746411 100.000000
+INFO:root:train 850 1.383715e-02 99.731933 100.000000
+INFO:root:train 900 1.406586e-02 99.725999 100.000000
+INFO:root:train_acc 99.726667
+INFO:root:epoch 16 lr 6.395177e-03
+INFO:root:genotype = Genotype(normal=[('avg_pool_3x3', 1), ('sep_conv_5x5', 0), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('dil_conv_5x5', 3), ('sep_conv_5x5', 2), ('max_pool_3x3', 3), ('sep_conv_5x5', 1)], normal_concat=range(2, 6), reduce=[('sep_conv_5x5', 0), ('dil_conv_5x5', 1), ('sep_conv_5x5', 2), ('sep_conv_3x3', 1), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('dil_conv_5x5', 3), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 9.392485e-03 100.000000 100.000000
+INFO:root:train 050 1.207378e-02 99.877451 100.000000
+INFO:root:train 100 1.135019e-02 99.876238 100.000000
+INFO:root:train 150 1.071365e-02 99.896523 100.000000
+INFO:root:train 200 1.137301e-02 99.860075 100.000000
+INFO:root:train 250 1.150739e-02 99.838147 100.000000
+INFO:root:train 300 1.117052e-02 99.823505 100.000000
+INFO:root:train 350 1.107158e-02 99.848647 100.000000
+INFO:root:train 400 1.124160e-02 99.828554 100.000000
+INFO:root:train 450 1.086921e-02 99.847561 100.000000
+INFO:root:train 500 1.088276e-02 99.850299 100.000000
+INFO:root:train 550 1.106162e-02 99.858212 100.000000
+INFO:root:train 600 1.073921e-02 99.870008 100.000000
+INFO:root:train 650 1.086395e-02 99.851190 100.000000
+INFO:root:train 700 1.087116e-02 99.843973 100.000000
+INFO:root:train 750 1.068105e-02 99.850200 100.000000
+INFO:root:train 800 1.069481e-02 99.843945 100.000000
+INFO:root:train 850 1.078982e-02 99.834753 100.000000
+INFO:root:train 900 1.064628e-02 99.840455 100.000000
+INFO:root:train_acc 99.833333
+INFO:root:epoch 17 lr 3.422702e-03
+INFO:root:genotype = Genotype(normal=[('avg_pool_3x3', 1), ('sep_conv_3x3', 0), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('dil_conv_5x5', 3), ('sep_conv_5x5', 2), ('sep_conv_5x5', 1), ('max_pool_3x3', 3)], normal_concat=range(2, 6), reduce=[('sep_conv_5x5', 0), ('dil_conv_5x5', 1), ('sep_conv_5x5', 2), ('dil_conv_5x5', 1), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('dil_conv_5x5', 3), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 1.607835e-03 100.000000 100.000000
+INFO:root:train 050 1.042647e-02 99.816176 100.000000
+INFO:root:train 100 8.576820e-03 99.876238 100.000000
+INFO:root:train 150 9.187849e-03 99.813742 100.000000
+INFO:root:train 200 8.813697e-03 99.860075 100.000000
+INFO:root:train 250 8.482188e-03 99.875498 100.000000
+INFO:root:train 300 8.248339e-03 99.896179 100.000000
+INFO:root:train 350 8.078209e-03 99.910969 100.000000
+INFO:root:train 400 7.825149e-03 99.922070 100.000000
+INFO:root:train 450 7.651390e-03 99.923780 100.000000
+INFO:root:train 500 7.522522e-03 99.931387 100.000000
+INFO:root:train 550 7.396537e-03 99.937613 100.000000
+INFO:root:train 600 7.438093e-03 99.937604 100.000000
+INFO:root:train 650 7.512233e-03 99.942396 100.000000
+INFO:root:train 700 7.462861e-03 99.942047 100.000000
+INFO:root:train 750 7.527493e-03 99.941744 100.000000
+INFO:root:train 800 7.592151e-03 99.933677 100.000000
+INFO:root:train 850 7.652039e-03 99.937573 100.000000
+INFO:root:train 900 7.780017e-03 99.934101 100.000000
+INFO:root:train_acc 99.933333
+INFO:root:epoch 18 lr 1.609427e-03
+INFO:root:genotype = Genotype(normal=[('avg_pool_3x3', 1), ('sep_conv_5x5', 0), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('sep_conv_5x5', 0), ('dil_conv_5x5', 3), ('max_pool_3x3', 3), ('sep_conv_5x5', 1)], normal_concat=range(2, 6), reduce=[('sep_conv_5x5', 0), ('dil_conv_5x5', 1), ('sep_conv_5x5', 2), ('dil_conv_5x5', 1), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('dil_conv_5x5', 3), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 7.430196e-03 100.000000 100.000000
+INFO:root:train 050 9.160035e-03 99.877451 100.000000
+INFO:root:train 100 8.191330e-03 99.938119 100.000000
+INFO:root:train 150 8.183467e-03 99.937914 100.000000
+INFO:root:train 200 7.857670e-03 99.937811 100.000000
+INFO:root:train 250 7.833648e-03 99.950199 100.000000
+INFO:root:train 300 7.918930e-03 99.948090 100.000000
+INFO:root:train 350 7.874284e-03 99.946581 100.000000
+INFO:root:train 400 8.047649e-03 99.945449 100.000000
+INFO:root:train 450 8.017210e-03 99.944568 100.000000
+INFO:root:train 500 7.795570e-03 99.950100 100.000000
+INFO:root:train 550 7.723170e-03 99.954628 100.000000
+INFO:root:train 600 7.641244e-03 99.958403 100.000000
+INFO:root:train 650 7.749677e-03 99.951997 100.000000
+INFO:root:train 700 7.663404e-03 99.950963 100.000000
+INFO:root:train 750 7.678640e-03 99.950067 100.000000
+INFO:root:train 800 7.547646e-03 99.949282 100.000000
+INFO:root:train 850 7.546313e-03 99.948590 100.000000
+INFO:root:train 900 7.536906e-03 99.947974 100.000000
+INFO:root:train_acc 99.950000
+INFO:root:epoch 19 lr 1.000000e-03
+INFO:root:genotype = Genotype(normal=[('avg_pool_3x3', 1), ('sep_conv_5x5', 0), ('avg_pool_3x3', 1), ('dil_conv_5x5', 2), ('sep_conv_5x5', 0), ('dil_conv_5x5', 3), ('sep_conv_3x3', 3), ('sep_conv_5x5', 2)], normal_concat=range(2, 6), reduce=[('sep_conv_5x5', 0), ('dil_conv_5x5', 1), ('dil_conv_5x5', 1), ('sep_conv_5x5', 2), ('avg_pool_3x3', 1), ('sep_conv_3x3', 3), ('dil_conv_5x5', 3), ('dil_conv_3x3', 4)], reduce_concat=range(2, 6))
+INFO:root:train 000 3.594056e-03 100.000000 100.000000
+INFO:root:train 050 6.214758e-03 100.000000 100.000000
+INFO:root:train 100 6.375932e-03 100.000000 100.000000
+INFO:root:train 150 7.034590e-03 99.958609 100.000000
+INFO:root:train 200 6.680093e-03 99.953358 100.000000
+INFO:root:train 250 7.152645e-03 99.950199 100.000000
+INFO:root:train 300 6.964711e-03 99.958472 100.000000
+INFO:root:train 350 6.846458e-03 99.964387 100.000000
+INFO:root:train 400 6.846632e-03 99.968828 100.000000
+INFO:root:train 450 6.857448e-03 99.972284 100.000000
+INFO:root:train 500 6.923093e-03 99.968812 100.000000
+INFO:root:train 550 6.833452e-03 99.971642 100.000000
+INFO:root:train 600 6.738530e-03 99.974002 100.000000
+INFO:root:train 650 6.680800e-03 99.975998 100.000000
+INFO:root:train 700 6.820948e-03 99.973252 100.000000
+INFO:root:train 750 6.846527e-03 99.970872 100.000000
+INFO:root:train 800 6.883665e-03 99.972690 100.000000
+INFO:root:train 850 6.844804e-03 99.974295 100.000000
+INFO:root:train 900 7.004209e-03 99.965316 100.000000
+INFO:root:train_acc 99.966667
+INFO:root:valid 000 6.984141e-02 96.875000 100.000000
+INFO:root:valid 050 3.290544e-02 99.080882 99.938725
+INFO:root:valid 100 3.441000e-02 99.040842 99.907178
+INFO:root:valid 150 3.243558e-02 99.006623 99.917219
+INFO:root:valid 200 3.336490e-02 99.067164 99.922264
+INFO:root:valid 250 3.162125e-02 99.103586 99.937749
+INFO:root:valid 300 3.279177e-02 99.086379 99.937708
+INFO:root:valid 350 3.149824e-02 99.100783 99.946581
+INFO:root:valid 400 3.167933e-02 99.096010 99.937656
+INFO:root:valid 450 3.153344e-02 99.120011 99.937639
+INFO:root:valid 500 3.136824e-02 99.114271 99.937625
+INFO:root:valid 550 3.126226e-02 99.109574 99.937613
+INFO:root:valid 600 3.182817e-02 99.095258 99.932404
+INFO:root:valid 650 3.168379e-02 99.092742 99.937596
+INFO:root:valid 700 3.157557e-02 99.108417 99.937589
+INFO:root:valid 750 3.169645e-02 99.084554 99.941744
+INFO:root:valid 800 3.178817e-02 99.067572 99.945381
+INFO:root:valid 850 3.113407e-02 99.081962 99.948590
+INFO:root:valid 900 3.108363e-02 99.084351 99.947974
+INFO:root:valid_acc 99.073333

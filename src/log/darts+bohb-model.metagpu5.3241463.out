@@ -1,0 +1,227 @@
+Workingdir: /home/rkohli/aml-project/PC-DARTS
+Started at Mon Sep  9 15:04:06 CEST 2019
+Running job darts+bohb-model using 2 cpus per node with given JID 3241463 on queue meta_gpu-black
+Experiment dir : eval-EXP-20190909-150429
+Experiment dir : bohb-EXP-01
+Datadir /home/rkohli/aml-project/PC-DARTS/data
+Downloading kmnist-train-imgs.npz
+done
+Downloading kmnist-train-labels.npz
+done
+Downloading kmnist-test-imgs.npz
+done
+Downloading kmnist-test-labels.npz
+done
+All files downloaded
+Worker running
+09/09 03:04:42 PM DISPATCHER: started the 'discover_worker' thread
+09/09 03:04:42 PM WORKER: start listening for jobs
+09/09 03:04:42 PM DISPATCHER: started the 'job_runner' thread
+09/09 03:04:42 PM DISPATCHER: Pyro daemon running on 127.0.0.1:39575
+09/09 03:04:43 PM DISPATCHER: A new worker triggered discover_worker
+09/09 03:04:43 PM DISPATCHER: discovered new worker, hpbandster.run_01.worker.metagpu5.18421140017543116608
+09/09 03:04:43 PM HBMASTER: adjusted queue size to (0, 1)
+09/09 03:04:43 PM DISPATCHER: A new worker triggered discover_worker
+09/09 03:04:43 PM HBMASTER: starting run at 1568034283.553535
+09/09 03:04:43 PM WORKER: start processing job (0, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (0, 0, 0) with dispatcher
+09/09 03:04:43 PM job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (1, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (1, 0, 0) with dispatcher
+09/09 03:04:43 PM job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (2, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (2, 0, 0) with dispatcher
+09/09 03:04:43 PM job (2, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (3, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (3, 0, 0) with dispatcher
+09/09 03:04:43 PM job (3, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (4, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (4, 0, 0) with dispatcher
+09/09 03:04:43 PM job (4, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (5, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (5, 0, 0) with dispatcher
+09/09 03:04:43 PM job (5, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (6, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (6, 0, 0) with dispatcher
+09/09 03:04:43 PM job (6, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (7, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (7, 0, 0) with dispatcher
+09/09 03:04:43 PM job (7, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (8, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (8, 0, 0) with dispatcher
+09/09 03:04:43 PM job (8, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (9, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (9, 0, 0) with dispatcher
+09/09 03:04:43 PM job (9, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (10, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (10, 0, 0) with dispatcher
+09/09 03:04:43 PM job (10, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (11, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (11, 0, 0) with dispatcher
+09/09 03:04:43 PM job (11, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:43 PM WORKER: start processing job (12, 0, 0)
+09/09 03:04:43 PM WORKER: registered result for job (12, 0, 0) with dispatcher
+09/09 03:04:43 PM job (12, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM WORKER: start processing job (13, 0, 0)
+09/09 03:04:44 PM WORKER: registered result for job (13, 0, 0) with dispatcher
+09/09 03:04:44 PM job (13, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM WORKER: start processing job (14, 0, 0)
+09/09 03:04:44 PM WORKER: registered result for job (14, 0, 0) with dispatcher
+09/09 03:04:44 PM job (14, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM WORKER: start processing job (15, 0, 0)
+09/09 03:04:44 PM WORKER: registered result for job (15, 0, 0) with dispatcher
+09/09 03:04:44 PM job (15, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM WORKER: start processing job (16, 0, 0)
+09/09 03:04:44 PM WORKER: registered result for job (16, 0, 0) with dispatcher
+09/09 03:04:44 PM job (16, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM WORKER: start processing job (17, 0, 0)
+09/09 03:04:44 PM WORKER: registered result for job (17, 0, 0) with dispatcher
+09/09 03:04:44 PM job (17, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM WORKER: start processing job (18, 0, 0)
+09/09 03:04:44 PM WORKER: registered result for job (18, 0, 0) with dispatcher
+09/09 03:04:44 PM job (18, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM WORKER: start processing job (19, 0, 0)
+09/09 03:04:44 PM WORKER: registered result for job (19, 0, 0) with dispatcher
+09/09 03:04:44 PM job (19, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 64, in compute
+    np.random.seed(config.seed)
+AttributeError: 'dict' object has no attribute 'seed'
+
+09/09 03:04:44 PM DISPATCHER: Dispatcher shutting down
+09/09 03:04:44 PM DISPATCHER: shut down complete

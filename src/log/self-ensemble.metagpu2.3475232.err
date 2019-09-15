@@ -1,0 +1,2 @@
+INFO:root:gpu device = cuda:0
+slurmstepd-metagpu2: error: *** JOB 3475232 ON metagpu2 CANCELLED AT 2019-09-14T22:57:20 ***

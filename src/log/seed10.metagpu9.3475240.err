@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "main.py", line 353, in <module>
+    darts(exp_name, darts_args)
+  File "/home/rkohli/aml-project/src/train_search.py", line 29, in darts
+    utils.create_exp_dir(args['save'], scripts_to_save=glob.glob('*.py'))
+  File "/home/rkohli/aml-project/src/utils.py", line 113, in create_exp_dir
+    os.mkdir(path)
+FileExistsError: [Errno 17] File exists: './EXP0/EXP-20190915-004223'

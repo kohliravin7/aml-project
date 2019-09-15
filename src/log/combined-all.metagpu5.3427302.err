@@ -1,0 +1,11 @@
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'drop_path_prob': 0.04992452260234029, 'grad_clip_value': 7, 'initial_lr': 0.0028493238730520885, 'lr_scheduler': 'Cosine', 'n_conv_layers': 5, 'optimizer': 'adam', 'weight_decay': 1.465223282456662e-05}
+main.py:103: DeprecationWarning: Calling np.sum(generator) is deprecated, and in the future will give a different result. Use np.sum(np.fromiter(generator)) or the python sum builtin instead.
+  total_model_params = np.sum(p.numel() for p in model.parameters())
+INFO:root:param size = 0.038025MB
+Traceback (most recent call last):
+  File "main.py", line 258, in <module>
+    _, model_description['bohb']['model_path'] = run_model(model_description['bohb']['config'], save_model_str=get('run_dir'), config_type='BOHB')
+  File "main.py", line 108, in run_model
+    criterion = criterion.cuda()
+TypeError: cuda() missing 1 required positional argument: 'self'

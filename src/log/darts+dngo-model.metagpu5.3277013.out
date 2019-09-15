@@ -1,0 +1,3 @@
+Workingdir: /home/rkohli/aml-project/src
+Started at Tue Sep 10 12:39:48 CEST 2019
+Running job darts+dngo-model using 2 cpus per node with given JID 3277013 on queue meta_gpu-black

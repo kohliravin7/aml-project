@@ -1,0 +1,541 @@
+INFO:hpbandster:DISPATCHER: started the 'discover_worker' thread
+INFO:hpbandster:DISPATCHER: started the 'job_runner' thread
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start listening for jobs
+INFO:hpbandster:DISPATCHER: Pyro daemon running on 127.0.0.1:40223
+INFO:hpbandster:DISPATCHER: discovered new worker, hpbandster.run_1.worker.metagpu5.23757139754725484352
+INFO:hpbandster:HBMASTER: adjusted queue size to (0, 1)
+INFO:hpbandster:DISPATCHER: A new worker triggered discover_worker
+INFO:hpbandster:HBMASTER: starting run at 1568415381.7032676
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (0, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 191, 'drop_path_prob': 0.07017814031825793, 'grad_clip_value': 5, 'initial_lr': 0.05014662246921201, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 4.649386411591351e-05, 'nesterov': 'True', 'sgd_momentum': 0.0545025177698163}
+INFO:root:param size = 0.028126MB
+INFO:root:epoch 0 lr 5.014662e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (0, 0, 0) with dispatcher
+WARNING:hpbandster:job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (0, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 175, 'drop_path_prob': 0.11282277075079264, 'grad_clip_value': 6, 'initial_lr': 0.008835926708280284, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.0298392278003892e-05, 'nesterov': 'True', 'sgd_momentum': 0.003379953539098215}
+INFO:root:param size = 0.025774MB
+INFO:root:epoch 0 lr 8.835927e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (0, 0, 1) with dispatcher
+WARNING:hpbandster:job (0, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (0, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 151, 'drop_path_prob': 0.13669628764717068, 'grad_clip_value': 7, 'initial_lr': 0.0011430569069714026, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 0.00012418476668400993}
+INFO:root:param size = 0.022246MB
+INFO:root:epoch 0 lr 1.143057e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (0, 1, 0) with dispatcher
+WARNING:hpbandster:job (0, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (1, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 185, 'drop_path_prob': 0.2699011246327243, 'grad_clip_value': 4, 'initial_lr': 0.06779457889591724, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 5.771822186221632e-05, 'nesterov': 'False', 'sgd_momentum': 0.9151266773112415}
+INFO:root:param size = 0.027244MB
+INFO:root:epoch 0 lr 6.779458e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (1, 0, 0) with dispatcher
+WARNING:hpbandster:job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (1, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 110, 'drop_path_prob': 0.21333306563023655, 'grad_clip_value': 4, 'initial_lr': 0.011731495433485218, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 0.0008023013067524526}
+INFO:root:param size = 0.016219MB
+INFO:root:epoch 0 lr 1.173150e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (1, 0, 1) with dispatcher
+WARNING:hpbandster:job (1, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (2, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 184, 'drop_path_prob': 0.13937290169743521, 'grad_clip_value': 8, 'initial_lr': 0.007534469720399449, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.9349498926538752e-05, 'nesterov': 'False', 'sgd_momentum': 0.7772776610981346}
+INFO:root:param size = 0.027097MB
+INFO:root:epoch 0 lr 7.534470e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (2, 0, 0) with dispatcher
+WARNING:hpbandster:job (2, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (2, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 245, 'drop_path_prob': 0.01007947733173027, 'grad_clip_value': 6, 'initial_lr': 0.07112835405425608, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 1.3858502679003411e-05}
+INFO:root:param size = 0.036064MB
+INFO:root:epoch 0 lr 7.112835e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (2, 0, 1) with dispatcher
+WARNING:hpbandster:job (2, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (2, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 136, 'drop_path_prob': 0.29659678288389074, 'grad_clip_value': 6, 'initial_lr': 0.015670175296198567, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 5.104433930017189e-05}
+INFO:root:param size = 0.020041MB
+INFO:root:epoch 0 lr 1.567018e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (2, 1, 0) with dispatcher
+WARNING:hpbandster:job (2, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (3, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 170, 'drop_path_prob': 0.2106542161805297, 'grad_clip_value': 5, 'initial_lr': 0.046376702241637695, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 0.0005653638506979022, 'nesterov': 'False', 'sgd_momentum': 0.6144489243179269}
+INFO:root:param size = 0.025039MB
+INFO:root:epoch 0 lr 4.637670e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (3, 0, 0) with dispatcher
+WARNING:hpbandster:job (3, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (3, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 65, 'drop_path_prob': 0.38797325235706603, 'grad_clip_value': 5, 'initial_lr': 0.001784557440255218, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 7.355619941196506e-05, 'nesterov': 'True', 'sgd_momentum': 0.020648808879452096}
+INFO:root:param size = 0.009604MB
+INFO:root:epoch 0 lr 1.784557e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (3, 0, 1) with dispatcher
+WARNING:hpbandster:job (3, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (4, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 116, 'drop_path_prob': 0.3292992358529445, 'grad_clip_value': 8, 'initial_lr': 0.0024311442330176053, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 0.0004551257911609259}
+INFO:root:param size = 0.017101MB
+INFO:root:epoch 0 lr 2.431144e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (4, 0, 0) with dispatcher
+WARNING:hpbandster:job (4, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (4, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 86, 'drop_path_prob': 0.30272484524404364, 'grad_clip_value': 8, 'initial_lr': 0.015172482724222369, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 3.9886340069312944e-05}
+INFO:root:param size = 0.012691MB
+INFO:root:epoch 0 lr 1.517248e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (4, 0, 1) with dispatcher
+WARNING:hpbandster:job (4, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (4, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 121, 'drop_path_prob': 0.06841748547547032, 'grad_clip_value': 6, 'initial_lr': 0.007076662208310622, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 0.0003329285727059807}
+INFO:root:param size = 0.017836MB
+INFO:root:epoch 0 lr 7.076662e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (4, 1, 0) with dispatcher
+WARNING:hpbandster:job (4, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (5, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 84, 'drop_path_prob': 0.20202589522727132, 'grad_clip_value': 6, 'initial_lr': 0.0016108276457225607, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 7.474518992192e-05, 'nesterov': 'True', 'sgd_momentum': 0.3184177911712104}
+INFO:root:param size = 0.012397MB
+INFO:root:epoch 0 lr 1.610828e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (5, 0, 0) with dispatcher
+WARNING:hpbandster:job (5, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (5, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 73, 'drop_path_prob': 0.3114526672554654, 'grad_clip_value': 7, 'initial_lr': 0.00850959540015973, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 1.3479401933267616e-05}
+INFO:root:param size = 0.010780MB
+INFO:root:epoch 0 lr 8.509595e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (5, 0, 1) with dispatcher
+WARNING:hpbandster:job (5, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (6, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 96, 'drop_path_prob': 0.27074688190453633, 'grad_clip_value': 4, 'initial_lr': 0.0014069309055570695, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 4.2280336992775273e-05, 'nesterov': 'True', 'sgd_momentum': 0.39451524072463734}
+INFO:root:param size = 0.014161MB
+INFO:root:epoch 0 lr 1.406931e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (6, 0, 0) with dispatcher
+WARNING:hpbandster:job (6, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (6, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 167, 'drop_path_prob': 0.11774363824201012, 'grad_clip_value': 8, 'initial_lr': 0.0015783983642758495, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 2.6448478269282086e-05}
+INFO:root:param size = 0.024598MB
+INFO:root:epoch 0 lr 1.578398e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (6, 0, 1) with dispatcher
+WARNING:hpbandster:job (6, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (6, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 156, 'drop_path_prob': 0.105947962612751, 'grad_clip_value': 4, 'initial_lr': 0.02212436792536571, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 2.4905971257219243e-05}
+INFO:root:param size = 0.022981MB
+INFO:root:epoch 0 lr 2.212437e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (6, 1, 0) with dispatcher
+WARNING:hpbandster:job (6, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (7, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 110, 'drop_path_prob': 0.07868645832059032, 'grad_clip_value': 5, 'initial_lr': 0.0020535740803122714, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 1.6216405026219745e-05}
+INFO:root:param size = 0.016219MB
+INFO:root:epoch 0 lr 2.053574e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (7, 0, 0) with dispatcher
+WARNING:hpbandster:job (7, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (7, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 189, 'drop_path_prob': 0.0066932284376445056, 'grad_clip_value': 8, 'initial_lr': 0.05514371787240973, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 1.6316382575695137e-05, 'nesterov': 'False', 'sgd_momentum': 0.38422797335721703}
+INFO:root:param size = 0.027832MB
+INFO:root:epoch 0 lr 5.514372e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (7, 0, 1) with dispatcher
+WARNING:hpbandster:job (7, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (8, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 237, 'drop_path_prob': 0.2639602046833952, 'grad_clip_value': 7, 'initial_lr': 0.048500541044727674, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 6.460724822372872e-05}
+INFO:root:param size = 0.034888MB
+INFO:root:epoch 0 lr 4.850054e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (8, 0, 0) with dispatcher
+WARNING:hpbandster:job (8, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (8, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 180, 'drop_path_prob': 0.3602552737552558, 'grad_clip_value': 4, 'initial_lr': 0.004471928038693108, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 2.9900395600915516e-05}
+INFO:root:param size = 0.026509MB
+INFO:root:epoch 0 lr 4.471928e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (8, 0, 1) with dispatcher
+WARNING:hpbandster:job (8, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (8, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 240, 'drop_path_prob': 0.1641428442623305, 'grad_clip_value': 6, 'initial_lr': 0.007103270765926916, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 1.2526558203057541e-05, 'nesterov': 'True', 'sgd_momentum': 0.9689728454719495}
+INFO:root:param size = 0.035329MB
+INFO:root:epoch 0 lr 7.103271e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (8, 1, 0) with dispatcher
+WARNING:hpbandster:job (8, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (9, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 152, 'drop_path_prob': 0.11488911264103328, 'grad_clip_value': 6, 'initial_lr': 0.020652868825239444, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.8512429818119856e-05, 'nesterov': 'True', 'sgd_momentum': 0.040257441990121864}
+INFO:root:param size = 0.022393MB
+INFO:root:epoch 0 lr 2.065287e-02
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (9, 0, 0) with dispatcher
+WARNING:hpbandster:job (9, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: start processing job (9, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 252, 'drop_path_prob': 0.07297469538427413, 'grad_clip_value': 6, 'initial_lr': 0.0015956909918817526, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 0.0002802350333068643}
+INFO:root:param size = 0.037093MB
+INFO:root:epoch 0 lr 1.595691e-03
+INFO:hpbandster.run_1.worker.metagpu5.23757:WORKER: registered result for job (9, 0, 1) with dispatcher
+WARNING:hpbandster:job (9, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 135, in compute
+    train_acc, train_obj = train(train_queue, ensemble_model, criterion, optimizer, grad_clip=config['grad_clip_value'])
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 297, in forward
+    out = torch.cat((out for out in outputs))
+TypeError: cat(): argument 'tensors' (position 1) must be tuple of Tensors, not generator
+
+INFO:hpbandster:DISPATCHER: Dispatcher shutting down
+INFO:hpbandster:DISPATCHER: shut down complete
+Traceback (most recent call last):
+  File "main.py", line 281, in <module>
+    ensemble_config = run_bohb_ensemble(exp_name=1, model_description=model_description, iterations=10)
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 227, in run_bohb_ensemble
+    best_config = id2conf[best_run]['config']
+KeyError: None

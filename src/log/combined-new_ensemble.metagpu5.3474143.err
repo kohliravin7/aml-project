@@ -1,0 +1,366 @@
+INFO:hpbandster:DISPATCHER: started the 'discover_worker' thread
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start listening for jobs
+INFO:hpbandster:DISPATCHER: started the 'job_runner' thread
+INFO:hpbandster:DISPATCHER: Pyro daemon running on 127.0.0.1:38203
+INFO:hpbandster:DISPATCHER: discovered new worker, hpbandster.run_1.worker.metagpu5.27884140539537934144
+INFO:hpbandster:HBMASTER: adjusted queue size to (0, 1)
+INFO:hpbandster:DISPATCHER: A new worker triggered discover_worker
+INFO:hpbandster:HBMASTER: starting run at 1568455847.8763018
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (0, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 116, 'drop_path_prob': 0.2940844865075657, 'grad_clip_value': 5, 'initial_lr': 0.001161876751595551, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 2.3209035074750197e-05}
+INFO:root:param size = 0.017101MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (0, 0, 0) with dispatcher
+WARNING:hpbandster:job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (0, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 224, 'drop_path_prob': 0.15173508784379558, 'grad_clip_value': 7, 'initial_lr': 0.006715306297867319, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 0.00021949705848152418, 'nesterov': 'True', 'sgd_momentum': 0.42350337230892954}
+INFO:root:param size = 0.032977MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (0, 0, 1) with dispatcher
+WARNING:hpbandster:job (0, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (0, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 199, 'drop_path_prob': 0.01410372059372418, 'grad_clip_value': 6, 'initial_lr': 0.0029716928831152833, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 3.742580878635789e-05}
+INFO:root:param size = 0.029302MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (0, 1, 0) with dispatcher
+WARNING:hpbandster:job (0, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (1, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 94, 'drop_path_prob': 0.11168449956370377, 'grad_clip_value': 5, 'initial_lr': 0.024036550663892542, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 2.121469908666413e-05}
+INFO:root:param size = 0.013867MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (1, 0, 0) with dispatcher
+WARNING:hpbandster:job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (1, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 122, 'drop_path_prob': 0.09403325150660252, 'grad_clip_value': 6, 'initial_lr': 0.035206428405572074, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 7.606937138392808e-05}
+INFO:root:param size = 0.017983MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (1, 0, 1) with dispatcher
+WARNING:hpbandster:job (1, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (2, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 94, 'drop_path_prob': 0.042269942441276645, 'grad_clip_value': 7, 'initial_lr': 0.0013441883426370325, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 0.000381588498306678}
+INFO:root:param size = 0.013867MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (2, 0, 0) with dispatcher
+WARNING:hpbandster:job (2, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (2, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 238, 'drop_path_prob': 0.18416241703813951, 'grad_clip_value': 8, 'initial_lr': 0.0037231970747650315, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 4.948226003919645e-05, 'nesterov': 'False', 'sgd_momentum': 0.9863823900525278}
+INFO:root:param size = 0.035035MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (2, 0, 1) with dispatcher
+WARNING:hpbandster:job (2, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (2, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 238, 'drop_path_prob': 0.22038907995003867, 'grad_clip_value': 7, 'initial_lr': 0.02754278901622468, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 0.00040618370620998823}
+INFO:root:param size = 0.035035MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (2, 1, 0) with dispatcher
+WARNING:hpbandster:job (2, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (3, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 254, 'drop_path_prob': 0.05224580824442726, 'grad_clip_value': 7, 'initial_lr': 0.04797089327540731, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 0.00039772577085333974}
+INFO:root:param size = 0.037387MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (3, 0, 0) with dispatcher
+WARNING:hpbandster:job (3, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (3, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 249, 'drop_path_prob': 0.04446774850635116, 'grad_clip_value': 8, 'initial_lr': 0.011309837363407418, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 3.595683156481551e-05, 'nesterov': 'True', 'sgd_momentum': 0.11947698001116783}
+INFO:root:param size = 0.036652MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (3, 0, 1) with dispatcher
+WARNING:hpbandster:job (3, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (4, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 115, 'drop_path_prob': 0.3226185061507986, 'grad_clip_value': 7, 'initial_lr': 0.055208917414089106, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 0.0008357577169953649, 'nesterov': 'False', 'sgd_momentum': 0.9742062627890232}
+INFO:root:param size = 0.016954MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (4, 0, 0) with dispatcher
+WARNING:hpbandster:job (4, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (4, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 101, 'drop_path_prob': 0.28955815193853174, 'grad_clip_value': 7, 'initial_lr': 0.012746973165032571, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 1.3628127669182154e-05}
+INFO:root:param size = 0.014896MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (4, 0, 1) with dispatcher
+WARNING:hpbandster:job (4, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (4, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 173, 'drop_path_prob': 0.16262097451667473, 'grad_clip_value': 6, 'initial_lr': 0.02968604011282887, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 1.321771846241142e-05}
+INFO:root:param size = 0.025480MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (4, 1, 0) with dispatcher
+WARNING:hpbandster:job (4, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (5, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 201, 'drop_path_prob': 0.3666246738321749, 'grad_clip_value': 8, 'initial_lr': 0.009216899667199414, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 1.6135312217882272e-05, 'nesterov': 'False', 'sgd_momentum': 0.14241724520318705}
+INFO:root:param size = 0.029596MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (5, 0, 0) with dispatcher
+WARNING:hpbandster:job (5, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (5, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 139, 'drop_path_prob': 0.3373381487769548, 'grad_clip_value': 8, 'initial_lr': 0.01070090125987278, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 4.2631239950771016e-05, 'nesterov': 'True', 'sgd_momentum': 0.9533555752515257}
+INFO:root:param size = 0.020482MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (5, 0, 1) with dispatcher
+WARNING:hpbandster:job (5, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (6, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 252, 'drop_path_prob': 0.13728316000425464, 'grad_clip_value': 8, 'initial_lr': 0.042538627911982874, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.7171660094884804e-05, 'nesterov': 'True', 'sgd_momentum': 0.6224656536524933}
+INFO:root:param size = 0.037093MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (6, 0, 0) with dispatcher
+WARNING:hpbandster:job (6, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (6, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 78, 'drop_path_prob': 0.02257768619069265, 'grad_clip_value': 8, 'initial_lr': 0.012807435559303474, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 4.8094007532092216e-05}
+INFO:root:param size = 0.011515MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (6, 0, 1) with dispatcher
+WARNING:hpbandster:job (6, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (6, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 95, 'drop_path_prob': 0.14862645258427887, 'grad_clip_value': 4, 'initial_lr': 0.0024813451198931868, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.9531614818968065e-05, 'nesterov': 'True', 'sgd_momentum': 0.18999777982167923}
+INFO:root:param size = 0.014014MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (6, 1, 0) with dispatcher
+WARNING:hpbandster:job (6, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (7, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 166, 'drop_path_prob': 0.3589035351038191, 'grad_clip_value': 4, 'initial_lr': 0.002396299011983322, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 0.0001636882247553639}
+INFO:root:param size = 0.024451MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (7, 0, 0) with dispatcher
+WARNING:hpbandster:job (7, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (7, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 65, 'drop_path_prob': 0.31181420252533026, 'grad_clip_value': 8, 'initial_lr': 0.0016304362918969266, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 1.2286539690299841e-05}
+INFO:root:param size = 0.009604MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (7, 0, 1) with dispatcher
+WARNING:hpbandster:job (7, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (8, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 91, 'drop_path_prob': 0.0058158795136528775, 'grad_clip_value': 5, 'initial_lr': 0.004172822352962921, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 5.030166931100857e-05, 'nesterov': 'False', 'sgd_momentum': 0.3634681091630988}
+INFO:root:param size = 0.013426MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (8, 0, 0) with dispatcher
+WARNING:hpbandster:job (8, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (8, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 231, 'drop_path_prob': 0.026371734282969995, 'grad_clip_value': 5, 'initial_lr': 0.09526448567122581, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 0.00012956198059331078}
+INFO:root:param size = 0.034006MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (8, 0, 1) with dispatcher
+WARNING:hpbandster:job (8, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (8, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 190, 'drop_path_prob': 0.2165100628108632, 'grad_clip_value': 4, 'initial_lr': 0.013735559987367283, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 0.0006575109758754452}
+INFO:root:param size = 0.027979MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (8, 1, 0) with dispatcher
+WARNING:hpbandster:job (8, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (9, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 71, 'drop_path_prob': 0.22239307397515007, 'grad_clip_value': 6, 'initial_lr': 0.04893824350667742, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 0.00022835577959176543}
+INFO:root:param size = 0.010486MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (9, 0, 0) with dispatcher
+WARNING:hpbandster:job (9, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: start processing job (9, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 228, 'drop_path_prob': 0.1870431747488302, 'grad_clip_value': 5, 'initial_lr': 0.009568113919682125, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.7597574311547013e-05, 'nesterov': 'True', 'sgd_momentum': 0.3561094141227199}
+INFO:root:param size = 0.033565MB
+INFO:hpbandster.run_1.worker.metagpu5.27884:WORKER: registered result for job (9, 0, 1) with dispatcher
+WARNING:hpbandster:job (9, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+NameError: name 'train_dataset' is not defined
+
+INFO:hpbandster:DISPATCHER: Dispatcher shutting down
+INFO:hpbandster:DISPATCHER: shut down complete
+Traceback (most recent call last):
+  File "main.py", line 284, in <module>
+    ensemble_config = run_bohb_ensemble(exp_name=1, model_description=model_description, iterations=10)
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 227, in run_bohb_ensemble
+    best_config = id2conf[best_run]['config']
+KeyError: None

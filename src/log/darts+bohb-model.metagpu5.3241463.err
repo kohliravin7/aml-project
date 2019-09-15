@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "darts-bohb.py", line 216, in <module>
+    run_bohb('01', iterations=20)
+  File "darts-bohb.py", line 207, in run_bohb
+    best_config = id2conf[best_run]['config']
+KeyError: None

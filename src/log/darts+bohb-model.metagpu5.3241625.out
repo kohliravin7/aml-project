@@ -1,0 +1,255 @@
+Workingdir: /home/rkohli/aml-project/PC-DARTS
+Started at Mon Sep  9 15:08:32 CEST 2019
+Running job darts+bohb-model using 2 cpus per node with given JID 3241625 on queue meta_gpu-black
+Experiment dir : eval-EXP-20190909-150856
+Worker running
+09/09 03:09:00 PM DISPATCHER: started the 'discover_worker' thread
+09/09 03:09:00 PM DISPATCHER: started the 'job_runner' thread
+09/09 03:09:00 PM WORKER: start listening for jobs
+09/09 03:09:00 PM DISPATCHER: Pyro daemon running on 127.0.0.1:38857
+09/09 03:09:00 PM DISPATCHER: discovered new worker, hpbandster.run_01.worker.metagpu5.18716139867416299328
+09/09 03:09:00 PM HBMASTER: adjusted queue size to (0, 1)
+09/09 03:09:00 PM DISPATCHER: A new worker triggered discover_worker
+09/09 03:09:00 PM HBMASTER: starting run at 1568034540.6305318
+09/09 03:09:00 PM WORKER: start processing job (0, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.25858317560062166, 'grad_clip_value': 4, 'initial_lr': 0.0002522580160636535, 'n_conv_layers': 3, 'optimizer': 'adad', 'scheduler': 'Cosine', 'weight_decay': 7.500856037529824e-05}
+09/09 03:09:00 PM WORKER: registered result for job (0, 0, 0) with dispatcher
+09/09 03:09:00 PM job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (1, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.2422285335943165, 'grad_clip_value': 6, 'initial_lr': 1.0330555189090455e-05, 'n_conv_layers': 5, 'optimizer': 'adam', 'scheduler': 'Exponential', 'weight_decay': 0.0001065561083691211}
+09/09 03:09:00 PM WORKER: registered result for job (1, 0, 0) with dispatcher
+09/09 03:09:00 PM job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (2, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.04242877685317686, 'grad_clip_value': 7, 'initial_lr': 0.0013788873484739826, 'n_conv_layers': 5, 'optimizer': 'adam', 'scheduler': 'Plateau', 'weight_decay': 0.00012011252849007652}
+09/09 03:09:00 PM WORKER: registered result for job (2, 0, 0) with dispatcher
+09/09 03:09:00 PM job (2, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (3, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.009651211841779174, 'grad_clip_value': 7, 'initial_lr': 0.0061710581358882305, 'n_conv_layers': 6, 'optimizer': 'adad', 'scheduler': 'Cosine', 'weight_decay': 4.652356398077691e-05}
+09/09 03:09:00 PM WORKER: registered result for job (3, 0, 0) with dispatcher
+09/09 03:09:00 PM job (3, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (4, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.2703734313913647, 'grad_clip_value': 5, 'initial_lr': 2.6225927781790085e-05, 'n_conv_layers': 3, 'optimizer': 'adad', 'scheduler': 'Cosine', 'weight_decay': 8.94885567772945e-05}
+09/09 03:09:00 PM WORKER: registered result for job (4, 0, 0) with dispatcher
+09/09 03:09:00 PM job (4, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (5, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.11520946746071559, 'grad_clip_value': 7, 'initial_lr': 7.669214006703389e-05, 'n_conv_layers': 6, 'optimizer': 'adam', 'scheduler': 'Plateau', 'weight_decay': 8.02669960649518e-05}
+09/09 03:09:00 PM WORKER: registered result for job (5, 0, 0) with dispatcher
+09/09 03:09:00 PM job (5, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (6, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.029323073810427404, 'grad_clip_value': 8, 'initial_lr': 0.04621096550922187, 'n_conv_layers': 6, 'optimizer': 'sgd', 'scheduler': 'Plateau', 'weight_decay': 1.9189468412039346e-05, 'nesterov': 'False', 'sgd_momentum': 0.926083844360062}
+09/09 03:09:00 PM WORKER: registered result for job (6, 0, 0) with dispatcher
+09/09 03:09:00 PM job (6, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (7, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.09265601218897031, 'grad_clip_value': 4, 'initial_lr': 7.160633206562357e-06, 'n_conv_layers': 6, 'optimizer': 'adam', 'scheduler': 'Cosine', 'weight_decay': 4.5223994475377824e-05}
+09/09 03:09:00 PM WORKER: registered result for job (7, 0, 0) with dispatcher
+09/09 03:09:00 PM job (7, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (8, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.2718926340795755, 'grad_clip_value': 6, 'initial_lr': 0.003745615951171976, 'n_conv_layers': 4, 'optimizer': 'sgd', 'scheduler': 'Cosine', 'weight_decay': 0.0001217144999596713, 'nesterov': 'False', 'sgd_momentum': 0.31042106567709693}
+09/09 03:09:00 PM WORKER: registered result for job (8, 0, 0) with dispatcher
+09/09 03:09:00 PM job (8, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (9, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.27880188219024876, 'grad_clip_value': 8, 'initial_lr': 1.7469008697006587e-05, 'n_conv_layers': 3, 'optimizer': 'adad', 'scheduler': 'Plateau', 'weight_decay': 0.0007631354940261912}
+09/09 03:09:00 PM WORKER: registered result for job (9, 0, 0) with dispatcher
+09/09 03:09:00 PM job (9, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (10, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.27628434754541287, 'grad_clip_value': 8, 'initial_lr': 6.148410927532393e-05, 'n_conv_layers': 4, 'optimizer': 'sgd', 'scheduler': 'Plateau', 'weight_decay': 0.00011355475280418373, 'nesterov': 'True', 'sgd_momentum': 0.06283539868234406}
+09/09 03:09:00 PM WORKER: registered result for job (10, 0, 0) with dispatcher
+09/09 03:09:00 PM job (10, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (11, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.12015963439043104, 'grad_clip_value': 6, 'initial_lr': 3.61228378709611e-05, 'n_conv_layers': 6, 'optimizer': 'adam', 'scheduler': 'Cosine', 'weight_decay': 6.414273215082813e-05}
+09/09 03:09:00 PM WORKER: registered result for job (11, 0, 0) with dispatcher
+09/09 03:09:00 PM job (11, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (12, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.08515659332361768, 'grad_clip_value': 7, 'initial_lr': 1.489203714435924e-05, 'n_conv_layers': 5, 'optimizer': 'adad', 'scheduler': 'Plateau', 'weight_decay': 0.0005243819239686509}
+09/09 03:09:00 PM WORKER: registered result for job (12, 0, 0) with dispatcher
+09/09 03:09:00 PM job (12, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (13, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.0692452525784225, 'grad_clip_value': 7, 'initial_lr': 1.9947812082950897e-06, 'n_conv_layers': 3, 'optimizer': 'sgd', 'scheduler': 'Plateau', 'weight_decay': 5.7087233233154494e-05, 'nesterov': 'False', 'sgd_momentum': 0.5087158571158671}
+09/09 03:09:00 PM WORKER: registered result for job (13, 0, 0) with dispatcher
+09/09 03:09:00 PM job (13, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (14, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.22084072266095875, 'grad_clip_value': 6, 'initial_lr': 0.010089451895317184, 'n_conv_layers': 3, 'optimizer': 'adad', 'scheduler': 'Cosine', 'weight_decay': 0.0007750994233620821}
+09/09 03:09:00 PM WORKER: registered result for job (14, 0, 0) with dispatcher
+09/09 03:09:00 PM job (14, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (15, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.36831749544374404, 'grad_clip_value': 8, 'initial_lr': 7.932952621407653e-05, 'n_conv_layers': 6, 'optimizer': 'sgd', 'scheduler': 'Cosine', 'weight_decay': 0.0002490346329046632, 'nesterov': 'True', 'sgd_momentum': 0.8608489237267739}
+09/09 03:09:00 PM WORKER: registered result for job (15, 0, 0) with dispatcher
+09/09 03:09:00 PM job (15, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (16, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.008172275224125959, 'grad_clip_value': 6, 'initial_lr': 6.86012161151744e-05, 'n_conv_layers': 4, 'optimizer': 'sgd', 'scheduler': 'Cosine', 'weight_decay': 0.0005868976581594552, 'nesterov': 'True', 'sgd_momentum': 0.4745128009654319}
+09/09 03:09:00 PM WORKER: registered result for job (16, 0, 0) with dispatcher
+09/09 03:09:00 PM job (16, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:00 PM WORKER: start processing job (17, 0, 0)
+09/09 03:09:00 PM gpu device = cuda:0
+09/09 03:09:00 PM config = {'drop_path_prob': 0.0311007489664378, 'grad_clip_value': 4, 'initial_lr': 0.003462512096373731, 'n_conv_layers': 6, 'optimizer': 'adam', 'scheduler': 'Exponential', 'weight_decay': 0.0003055014922546372}
+09/09 03:09:00 PM WORKER: registered result for job (17, 0, 0) with dispatcher
+09/09 03:09:00 PM job (17, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:01 PM WORKER: start processing job (18, 0, 0)
+09/09 03:09:01 PM gpu device = cuda:0
+09/09 03:09:01 PM config = {'drop_path_prob': 0.3910740828981791, 'grad_clip_value': 4, 'initial_lr': 0.001045824464965763, 'n_conv_layers': 5, 'optimizer': 'adam', 'scheduler': 'Exponential', 'weight_decay': 2.0440618041331902e-05}
+09/09 03:09:01 PM WORKER: registered result for job (18, 0, 0) with dispatcher
+09/09 03:09:01 PM job (18, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:01 PM WORKER: start processing job (19, 0, 0)
+09/09 03:09:01 PM gpu device = cuda:0
+09/09 03:09:01 PM config = {'drop_path_prob': 0.12549514078826893, 'grad_clip_value': 7, 'initial_lr': 4.377195572902214e-06, 'n_conv_layers': 5, 'optimizer': 'adam', 'scheduler': 'Exponential', 'weight_decay': 8.750361673186915e-05}
+09/09 03:09:01 PM WORKER: registered result for job (19, 0, 0) with dispatcher
+09/09 03:09:01 PM job (19, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config.n_conv_layers, genotype)
+AttributeError: 'dict' object has no attribute 'n_conv_layers'
+
+09/09 03:09:01 PM DISPATCHER: Dispatcher shutting down
+09/09 03:09:01 PM DISPATCHER: shut down complete

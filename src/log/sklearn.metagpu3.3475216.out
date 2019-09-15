@@ -1,0 +1,3 @@
+Workingdir: /home/rkohli/aml-project/src
+Started at Sat Sep 14 21:22:07 CEST 2019
+Running job sklearn using 2 cpus per node with given JID 3475216 on queue meta_gpu-black

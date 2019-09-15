@@ -1,0 +1,278 @@
+INFO:root:gpu device = cuda:0
+Traceback (most recent call last):
+  File "main.py", line 377, in <module>
+    save_model_str=get('run_dir'))
+  File "main.py", line 325, in create_run_ensemble_sklearn
+    ensemble_model.fit(X_train, y_train)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/sklearn/ensemble/voting.py", line 279, in fit
+    return super().fit(X, transformed_y, sample_weight)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/sklearn/ensemble/voting.py", line 101, in fit
+    for clf in clfs if clf not in (None, 'drop')
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/joblib/parallel.py", line 921, in __call__
+    if self.dispatch_one_batch(iterator):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/joblib/parallel.py", line 754, in dispatch_one_batch
+    self._pickle_cache)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/joblib/parallel.py", line 210, in __init__
+    self.items = list(iterator_slice)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/sklearn/ensemble/voting.py", line 101, in <genexpr>
+    for clf in clfs if clf not in (None, 'drop')
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/sklearn/base.py", line 60, in clone
+    % (repr(estimator), type(estimator)))
+TypeError: Cannot clone object 'NetworkKMNIST(
+  (stem): Sequential(
+    (0): Conv2d(1, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+    (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (cells): ModuleList(
+    (0): Cell(
+      (preprocess0): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(24, 8, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (preprocess1): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(24, 8, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (_ops): ModuleList(
+        (0): Identity()
+        (1): AvgPool2d(kernel_size=3, stride=1, padding=1)
+        (2): Identity()
+        (3): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(8, 8, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), groups=8, bias=False)
+            (2): Conv2d(8, 8, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (4): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(8, 8, kernel_size=(5, 5), stride=(1, 1), padding=(4, 4), dilation=(2, 2), groups=8, bias=False)
+            (2): Conv2d(8, 8, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (5): Identity()
+        (6): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+        (7): Identity()
+      )
+    )
+    (1): Cell(
+      (preprocess0): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(24, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (preprocess1): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (_ops): ModuleList(
+        (0): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+        (1): SepConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(16, 16, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=16, bias=False)
+            (2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (4): ReLU()
+            (5): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=16, bias=False)
+            (6): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (7): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (2): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(16, 16, kernel_size=(5, 5), stride=(2, 2), padding=(4, 4), dilation=(2, 2), groups=16, bias=False)
+            (2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (3): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), groups=16, bias=False)
+            (2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (4): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(16, 16, kernel_size=(5, 5), stride=(2, 2), padding=(4, 4), dilation=(2, 2), groups=16, bias=False)
+            (2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (5): AvgPool2d(kernel_size=3, stride=1, padding=1)
+        (6): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(16, 16, kernel_size=(5, 5), stride=(2, 2), padding=(4, 4), dilation=(2, 2), groups=16, bias=False)
+            (2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (7): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      )
+    )
+    (2): Cell(
+      (preprocess0): FactorizedReduce(
+        (relu): ReLU()
+        (conv_1): Conv2d(32, 8, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (conv_2): Conv2d(32, 8, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (bn): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (preprocess1): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(64, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (_ops): ModuleList(
+        (0): Identity()
+        (1): AvgPool2d(kernel_size=3, stride=1, padding=1)
+        (2): Identity()
+        (3): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), groups=16, bias=False)
+            (2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (4): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(16, 16, kernel_size=(5, 5), stride=(1, 1), padding=(4, 4), dilation=(2, 2), groups=16, bias=False)
+            (2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (5): Identity()
+        (6): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+        (7): Identity()
+      )
+    )
+    (3): Cell(
+      (preprocess0): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (preprocess1): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (_ops): ModuleList(
+        (0): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+        (1): SepConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(32, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=32, bias=False)
+            (2): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (4): ReLU()
+            (5): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
+            (6): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (7): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (2): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(32, 32, kernel_size=(5, 5), stride=(2, 2), padding=(4, 4), dilation=(2, 2), groups=32, bias=False)
+            (2): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (3): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), groups=32, bias=False)
+            (2): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (4): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(32, 32, kernel_size=(5, 5), stride=(2, 2), padding=(4, 4), dilation=(2, 2), groups=32, bias=False)
+            (2): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (5): AvgPool2d(kernel_size=3, stride=1, padding=1)
+        (6): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(32, 32, kernel_size=(5, 5), stride=(2, 2), padding=(4, 4), dilation=(2, 2), groups=32, bias=False)
+            (2): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (7): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      )
+    )
+    (4): Cell(
+      (preprocess0): FactorizedReduce(
+        (relu): ReLU()
+        (conv_1): Conv2d(64, 16, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (conv_2): Conv2d(64, 16, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (bn): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (preprocess1): ReLUConvBN(
+        (op): Sequential(
+          (0): ReLU()
+          (1): Conv2d(128, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (_ops): ModuleList(
+        (0): Identity()
+        (1): AvgPool2d(kernel_size=3, stride=1, padding=1)
+        (2): Identity()
+        (3): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(2, 2), dilation=(2, 2), groups=32, bias=False)
+            (2): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (4): DilConv(
+          (op): Sequential(
+            (0): ReLU()
+            (1): Conv2d(32, 32, kernel_size=(5, 5), stride=(1, 1), padding=(4, 4), dilation=(2, 2), groups=32, bias=False)
+            (2): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (3): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (5): Identity()
+        (6): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+        (7): Identity()
+      )
+    )
+  )
+  (global_pooling): AdaptiveAvgPool2d(output_size=1)
+  (classifier): Linear(in_features=128, out_features=49, bias=True)
+)' (type <class 'model.NetworkKMNIST'>): it does not seem to be a scikit-learn estimator as it does not implement a 'get_params' methods.

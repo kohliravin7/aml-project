@@ -1,0 +1,189 @@
+INFO:solver.bo_hb:Evaluate: [2.85890594e+01 4.44683108e-02 7.64092202e+00 3.70131619e-02
+ 3.72266210e-01 5.91303098e+00 4.91949924e-01 2.09296764e-04]
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'batch_size': 32, 'drop_path_prob': 0.017787324310316762, 'grad_clip_value': 8, 'initial_lr': 1.5313194871772528e-06, 'lr_scheduler': 'Exponential', 'n_conv_layers': 6, 'optimizer': 'adam', 'weight_decay': 1.0009643118668736e-05}
+INFO:root:param size = 0.255930MB
+/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:82: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule.See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+INFO:root:epoch 0 lr 1.531319e-07
+/home/rkohli/aml-project/PC-DARTS/train.py:131: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  nn.utils.clip_grad_norm(model.parameters(), grad_clip)
+INFO:root:train 000 2.394835e+00 12.500000 40.625000
+INFO:root:train 050 2.350971e+00 7.322304 48.958333
+INFO:root:train 100 2.352413e+00 7.224629 47.694926
+INFO:root:train 150 2.352835e+00 7.015728 47.402732
+INFO:root:train 200 2.354125e+00 6.926306 47.092662
+INFO:root:train 250 2.352394e+00 7.003237 47.509960
+INFO:root:train 300 2.351093e+00 7.080565 47.840532
+INFO:root:train 350 2.350169e+00 7.100249 48.094729
+INFO:root:train 400 2.349448e+00 7.122818 48.258261
+INFO:root:train 450 2.348842e+00 7.175028 48.427106
+INFO:root:train 500 2.348563e+00 7.176272 48.502994
+INFO:root:train 550 2.348025e+00 7.180127 48.460186
+INFO:root:train 600 2.347499e+00 7.219738 48.455699
+INFO:root:train 650 2.347762e+00 7.183660 48.459101
+INFO:root:train 700 2.347514e+00 7.172789 48.488766
+INFO:root:train_acc 7.235417
+INFO:root:valid 000 2.379113e+00 6.250000 37.500000
+INFO:root:valid 050 2.343914e+00 7.689951 48.253676
+INFO:root:valid 100 2.345347e+00 7.626856 48.592203
+INFO:root:valid 150 2.342643e+00 7.812500 49.048013
+INFO:root:valid_acc 7.725000
+INFO:root:epoch 1 lr 1.531319e-08
+INFO:root:train 000 2.337516e+00 7.812500 46.875000
+INFO:root:train 050 2.341706e+00 8.118873 49.785539
+INFO:root:train 100 2.341763e+00 7.564975 49.891708
+INFO:root:train 150 2.344831e+00 7.439983 48.675497
+INFO:root:train 200 2.344703e+00 7.291667 48.841729
+INFO:root:train 250 2.344451e+00 7.246016 48.873257
+INFO:root:train 300 2.344313e+00 7.251869 49.008513
+INFO:root:train 350 2.343916e+00 7.269409 48.980591
+INFO:root:train 400 2.343927e+00 7.325436 48.916771
+INFO:root:train 450 2.344364e+00 7.289357 48.984895
+INFO:root:train 500 2.344556e+00 7.244885 48.983283
+INFO:root:train 550 2.345060e+00 7.214156 48.911071
+INFO:root:train 600 2.345008e+00 7.240537 48.759879
+INFO:root:train 650 2.344704e+00 7.231663 48.768721
+INFO:root:train 700 2.344523e+00 7.237429 48.767386
+INFO:root:train_acc 7.222917
+INFO:root:valid 000 2.362438e+00 4.687500 46.875000
+INFO:root:valid 050 2.337100e+00 7.781863 49.724265
+INFO:root:valid 100 2.340066e+00 7.998144 49.118193
+INFO:root:valid 150 2.339654e+00 7.884934 49.275662
+INFO:root:valid_acc 7.833333
+INFO:root:epoch 2 lr 1.531319e-09
+INFO:root:train 000 2.338285e+00 6.250000 50.000000
+INFO:root:train 050 2.348168e+00 6.985294 48.560049
+INFO:root:train 100 2.346306e+00 7.301980 49.164604
+INFO:root:train 150 2.344034e+00 7.419288 49.720613
+INFO:root:train 200 2.343493e+00 7.447139 49.626866
+INFO:root:train 250 2.343664e+00 7.376743 49.614044
+INFO:root:train 300 2.343611e+00 7.205150 49.667774
+INFO:root:train 350 2.344918e+00 7.207087 49.358974
+INFO:root:train 400 2.344977e+00 7.204645 49.294732
+INFO:root:train 450 2.345534e+00 7.164634 49.095759
+INFO:root:train 500 2.345402e+00 7.157560 49.092440
+INFO:root:train 550 2.345399e+00 7.177291 49.058530
+INFO:root:train 600 2.345314e+00 7.185940 48.900270
+INFO:root:train 650 2.345540e+00 7.243664 48.874328
+INFO:root:train 700 2.345481e+00 7.253031 48.887750
+INFO:root:train_acc 7.302083
+INFO:root:valid 000 2.332608e+00 9.375000 51.562500
+INFO:root:valid 050 2.350637e+00 7.169118 46.384804
+INFO:root:valid 100 2.341801e+00 7.441213 47.865099
+INFO:root:valid 150 2.339504e+00 7.791805 48.437500
+INFO:root:valid_acc 7.741667
+INFO:root:epoch 3 lr 1.531319e-10
+INFO:root:train 000 2.323925e+00 15.625000 46.875000
+INFO:root:train 050 2.342122e+00 7.751225 49.387255
+INFO:root:train 100 2.345265e+00 7.224629 49.396658
+INFO:root:train 150 2.345141e+00 7.471026 49.110099
+INFO:root:train 200 2.343234e+00 7.625933 49.564677
+INFO:root:train 250 2.343766e+00 7.625747 49.371265
+INFO:root:train 300 2.344172e+00 7.532184 49.439369
+INFO:root:train 350 2.344601e+00 7.523148 49.341168
+INFO:root:train 400 2.345292e+00 7.438435 49.181733
+INFO:root:train 450 2.345844e+00 7.379435 49.005682
+INFO:root:train 500 2.345999e+00 7.375873 48.933383
+INFO:root:train 550 2.345743e+00 7.443852 49.021665
+INFO:root:train 600 2.345219e+00 7.479721 49.051061
+INFO:root:train 650 2.345336e+00 7.517281 49.051939
+INFO:root:train 700 2.345035e+00 7.540567 49.112874
+INFO:root:train_acc 7.537500
+INFO:root:valid 000 2.346038e+00 4.687500 50.000000
+INFO:root:valid 050 2.334799e+00 7.720588 49.908088
+INFO:root:valid 100 2.335233e+00 7.858911 49.288366
+INFO:root:valid 150 2.336981e+00 7.605546 48.820364
+INFO:root:valid_acc 7.791667
+INFO:root:epoch 4 lr 1.531319e-11
+INFO:root:train 000 2.360418e+00 3.125000 46.875000
+INFO:root:train 050 2.343128e+00 7.015931 50.520833
+INFO:root:train 100 2.346455e+00 7.131807 49.118193
+INFO:root:train 150 2.343134e+00 7.284768 49.461921
+INFO:root:train 200 2.341770e+00 7.439366 49.735697
+INFO:root:train 250 2.342629e+00 7.407869 49.501992
+INFO:root:train 300 2.342740e+00 7.542566 49.517234
+INFO:root:train 350 2.342792e+00 7.616631 49.519231
+INFO:root:train 400 2.342972e+00 7.586502 49.505143
+INFO:root:train 450 2.343724e+00 7.594235 49.376386
+INFO:root:train 500 2.343336e+00 7.616018 49.457335
+INFO:root:train 550 2.343960e+00 7.616833 49.344941
+INFO:root:train 600 2.344108e+00 7.617512 49.344842
+INFO:root:train 650 2.343860e+00 7.639689 49.332757
+INFO:root:train 700 2.344298e+00 7.602978 49.181972
+INFO:root:train_acc 7.591667
+INFO:root:valid 000 2.293536e+00 9.375000 57.812500
+INFO:root:valid 050 2.327363e+00 8.455882 50.765931
+INFO:root:valid 100 2.333566e+00 7.595916 49.474010
+INFO:root:valid 150 2.335558e+00 7.729719 48.758278
+INFO:root:valid_acc 7.616667
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 1034, in emit
+    msg = self.format(record)
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 880, in format
+    return fmt.format(record)
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 619, in format
+    record.message = record.getMessage()
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 380, in getMessage
+    msg = msg % self.args
+TypeError: must be real number, not tuple
+Call stack:
+  File "darts-bohamiann.py", line 172, in <module>
+    worker.run_bohamiann()
+  File "darts-bohamiann.py", line 161, in run_bohamiann
+    results = bohamiann(self.compute, lower, upper, num_iterations=iterations, cs=cs)
+  File "/home/rkohli/aml-project/PC-DARTS/fmin/bohamiann.py", line 101, in bohamiann
+    x_best, f_min = bo.run(num_iterations)
+  File "/home/rkohli/aml-project/PC-DARTS/solver/bo_hb.py", line 147, in run
+    y[i], self.time_func_evals[i])
+Message: 'Configuration achieved a performance of %f in %f seconds'
+Arguments: ((2.3361772549947104,), 1160.286803483963)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 1034, in emit
+    msg = self.format(record)
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 880, in format
+    return fmt.format(record)
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 619, in format
+    record.message = record.getMessage()
+  File "/home/rkohli/anaconda3/lib/python3.7/logging/__init__.py", line 380, in getMessage
+    msg = msg % self.args
+TypeError: must be real number, not tuple
+Call stack:
+  File "darts-bohamiann.py", line 172, in <module>
+    worker.run_bohamiann()
+  File "darts-bohamiann.py", line 161, in run_bohamiann
+    results = bohamiann(self.compute, lower, upper, num_iterations=iterations, cs=cs)
+  File "/home/rkohli/aml-project/PC-DARTS/fmin/bohamiann.py", line 101, in bohamiann
+    x_best, f_min = bo.run(num_iterations)
+  File "/home/rkohli/aml-project/PC-DARTS/solver/bo_hb.py", line 147, in run
+    y[i], self.time_func_evals[i])
+Message: 'Configuration achieved a performance of %f in %f seconds'
+Arguments: ((2.3361772549947104,), 1160.286803483963)
+INFO:solver.bo_hb:Evaluate: [2.15665651e+01 1.92408251e-01 6.60879908e+00 1.08441234e-02
+ 7.48555766e-01 3.15442334e+00 2.62914196e+00 8.01576403e-05]
+INFO:solver.bo_hb:Configuration achieved a performance of 100.000000 in 0.148249 seconds
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 56, in _wrapfunc
+    return getattr(obj, method)(*args, **kwds)
+AttributeError: 'list' object has no attribute 'argmin'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "darts-bohamiann.py", line 172, in <module>
+    worker.run_bohamiann()
+  File "darts-bohamiann.py", line 161, in run_bohamiann
+    results = bohamiann(self.compute, lower, upper, num_iterations=iterations, cs=cs)
+  File "/home/rkohli/aml-project/PC-DARTS/fmin/bohamiann.py", line 101, in bohamiann
+    x_best, f_min = bo.run(num_iterations)
+  File "/home/rkohli/aml-project/PC-DARTS/solver/bo_hb.py", line 150, in run
+    best_idx = np.argmin(y)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 1172, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 66, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 46, in _wrapit
+    result = getattr(asarray(obj), method)(*args, **kwds)
+TypeError: '<' not supported between instances of 'int' and 'tuple'

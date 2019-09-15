@@ -1,0 +1,1 @@
+{"normal": [["skip_connect", 1], ["avg_pool_3x3", 0], ["skip_connect", 1], ["dil_conv_3x3", 2], ["dil_conv_5x5", 0], ["skip_connect", 3], ["max_pool_3x3", 0], ["skip_connect", 4]], "normal_concat": 

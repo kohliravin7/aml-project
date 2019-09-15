@@ -1,0 +1,16 @@
+INFO:root:gpu device = cuda:0
+/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:82: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule.See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+INFO:root:epoch 0 lr 1.987688e-02
+/home/rkohli/aml-project/src/train.py:131: UserWarning: torch.nn.utils.clip_grad_norm is now deprecated in favor of torch.nn.utils.clip_grad_norm_.
+  nn.utils.clip_grad_norm(model.parameters(), grad_clip)
+INFO:root:train 000 8.574758e+00 1.562500 10.937500
+INFO:root:train 050 1.306892e+00 76.562500 88.327206
+INFO:root:train 100 8.284651e-01 84.127475 93.750000
+INFO:root:train 150 6.656318e-01 86.827401 95.540149
+INFO:root:train 200 5.792544e-01 88.386194 96.462998
+INFO:root:train 250 5.226921e-01 89.230578 97.005727
+INFO:root:train 300 4.899596e-01 89.856728 97.373339
+INFO:root:train 350 4.786099e-01 90.104167 97.627315
+INFO:root:train 400 4.611006e-01 90.410692 97.817955
+slurmstepd-metagpu2: error: *** JOB 3454326 ON metagpu2 CANCELLED AT 2019-09-13T12:22:52 ***

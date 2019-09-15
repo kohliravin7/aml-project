@@ -1,0 +1,369 @@
+Workingdir: /home/rkohli/aml-project/PC-DARTS
+Started at Mon Sep  9 15:31:35 CEST 2019
+Running job darts+bohb-model using 2 cpus per node with given JID 3242508 on queue meta_gpu-black
+Experiment dir : eval-EXP-20190909-154024
+Worker running
+09/09 03:41:20 PM DISPATCHER: started the 'discover_worker' thread
+09/09 03:41:20 PM WORKER: start listening for jobs
+09/09 03:41:20 PM DISPATCHER: started the 'job_runner' thread
+09/09 03:41:20 PM DISPATCHER: Pyro daemon running on 127.0.0.1:44913
+09/09 03:41:20 PM DISPATCHER: discovered new worker, hpbandster.run_01.worker.metagpu8.17495139667041290048
+09/09 03:41:20 PM HBMASTER: adjusted queue size to (0, 1)
+09/09 03:41:20 PM DISPATCHER: A new worker triggered discover_worker
+09/09 03:41:20 PM HBMASTER: starting run at 1568036480.794891
+09/09 03:41:20 PM WORKER: start processing job (0, 0, 0)
+09/09 03:41:21 PM gpu device = cuda:0
+09/09 03:41:21 PM config = {'drop_path_prob': 0.004130871980240825, 'grad_clip_value': 4, 'initial_lr': 0.014044025995162022, 'lr_scheduler': 'Plateau', 'n_conv_layers': 5, 'optimizer': 'adam', 'weight_decay': 0.0001129012648622097}
+48 48 16
+48 64 32
+64 128 32
+128 128 64
+128 256 64
+09/09 03:41:48 PM param size = 0.245898MB
+09/09 03:41:48 PM WORKER: registered result for job (0, 0, 0) with dispatcher
+09/09 03:41:49 PM job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:49 PM WORKER: start processing job (1, 0, 0)
+09/09 03:41:49 PM gpu device = cuda:0
+09/09 03:41:49 PM config = {'drop_path_prob': 0.08715089965530698, 'grad_clip_value': 8, 'initial_lr': 0.00032578311754721497, 'lr_scheduler': 'Exponential', 'n_conv_layers': 3, 'optimizer': 'sgd', 'weight_decay': 0.0006102249787785113, 'nesterov': 'False', 'sgd_momentum': 0.11182019462843429}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:49 PM param size = 0.118122MB
+09/09 03:41:49 PM WORKER: registered result for job (1, 0, 0) with dispatcher
+09/09 03:41:49 PM job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 98, in compute
+    lr_scheduler = torch.optim.lr_schedular.ExponnetialLR(optimizer, gamma=0.1)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:49 PM WORKER: start processing job (2, 0, 0)
+09/09 03:41:49 PM gpu device = cuda:0
+09/09 03:41:49 PM config = {'drop_path_prob': 0.08078062488819149, 'grad_clip_value': 8, 'initial_lr': 1.6309382949428776e-05, 'lr_scheduler': 'Plateau', 'n_conv_layers': 6, 'optimizer': 'adad', 'weight_decay': 1.3670814901684278e-05}
+48 48 16
+48 64 16
+64 64 32
+64 128 32
+128 128 64
+128 256 64
+09/09 03:41:49 PM param size = 0.255930MB
+09/09 03:41:49 PM WORKER: registered result for job (2, 0, 0) with dispatcher
+09/09 03:41:49 PM job (2, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:49 PM WORKER: start processing job (3, 0, 0)
+09/09 03:41:49 PM gpu device = cuda:0
+09/09 03:41:49 PM config = {'drop_path_prob': 0.3300566808220748, 'grad_clip_value': 8, 'initial_lr': 1.4603063321650018e-05, 'lr_scheduler': 'Plateau', 'n_conv_layers': 4, 'optimizer': 'sgd', 'weight_decay': 1.077988662119353e-05, 'nesterov': 'False', 'sgd_momentum': 0.36284031643838055}
+48 48 16
+48 64 32
+64 128 64
+128 256 64
+09/09 03:41:49 PM param size = 0.213546MB
+09/09 03:41:49 PM WORKER: registered result for job (3, 0, 0) with dispatcher
+09/09 03:41:49 PM job (3, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:49 PM WORKER: start processing job (4, 0, 0)
+09/09 03:41:49 PM gpu device = cuda:0
+09/09 03:41:49 PM config = {'drop_path_prob': 0.3257360862019454, 'grad_clip_value': 5, 'initial_lr': 2.39602664320145e-06, 'lr_scheduler': 'Plateau', 'n_conv_layers': 4, 'optimizer': 'sgd', 'weight_decay': 0.0008069492448570801, 'nesterov': 'True', 'sgd_momentum': 0.31850662423061754}
+48 48 16
+48 64 32
+64 128 64
+128 256 64
+09/09 03:41:49 PM param size = 0.213546MB
+09/09 03:41:50 PM WORKER: registered result for job (4, 0, 0) with dispatcher
+09/09 03:41:50 PM job (4, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:50 PM WORKER: start processing job (5, 0, 0)
+09/09 03:41:50 PM gpu device = cuda:0
+09/09 03:41:50 PM config = {'drop_path_prob': 0.1324838206983678, 'grad_clip_value': 5, 'initial_lr': 0.05226825973521887, 'lr_scheduler': 'Plateau', 'n_conv_layers': 3, 'optimizer': 'adam', 'weight_decay': 2.4065345994374008e-05}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:50 PM param size = 0.118122MB
+09/09 03:41:50 PM WORKER: registered result for job (5, 0, 0) with dispatcher
+09/09 03:41:50 PM job (5, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:50 PM WORKER: start processing job (6, 0, 0)
+09/09 03:41:50 PM gpu device = cuda:0
+09/09 03:41:50 PM config = {'drop_path_prob': 0.20669660025904021, 'grad_clip_value': 5, 'initial_lr': 2.15591036504414e-05, 'lr_scheduler': 'Plateau', 'n_conv_layers': 4, 'optimizer': 'adad', 'weight_decay': 0.000686216551993565}
+48 48 16
+48 64 32
+64 128 64
+128 256 64
+09/09 03:41:50 PM param size = 0.213546MB
+09/09 03:41:50 PM WORKER: registered result for job (6, 0, 0) with dispatcher
+09/09 03:41:50 PM job (6, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:50 PM WORKER: start processing job (7, 0, 0)
+09/09 03:41:50 PM gpu device = cuda:0
+09/09 03:41:50 PM config = {'drop_path_prob': 0.011091667721027543, 'grad_clip_value': 6, 'initial_lr': 0.0011785147643290804, 'lr_scheduler': 'Cosine', 'n_conv_layers': 5, 'optimizer': 'adam', 'weight_decay': 1.199078509608781e-05}
+48 48 16
+48 64 32
+64 128 32
+128 128 64
+128 256 64
+09/09 03:41:50 PM param size = 0.245898MB
+Training size= 48000
+09/09 03:41:51 PM WORKER: registered result for job (7, 0, 0) with dispatcher
+09/09 03:41:51 PM job (7, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 109, in compute
+    sampler=training_sampler, shuffle=True)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 189, in __init__
+    raise ValueError('sampler option is mutually exclusive with '
+ValueError: sampler option is mutually exclusive with shuffle
+
+09/09 03:41:51 PM WORKER: start processing job (8, 0, 0)
+09/09 03:41:51 PM gpu device = cuda:0
+09/09 03:41:51 PM config = {'drop_path_prob': 0.30430309511759984, 'grad_clip_value': 6, 'initial_lr': 1.2316369325225227e-06, 'lr_scheduler': 'Exponential', 'n_conv_layers': 3, 'optimizer': 'sgd', 'weight_decay': 0.0007877638128765943, 'nesterov': 'False', 'sgd_momentum': 0.2598241308143373}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:51 PM param size = 0.118122MB
+09/09 03:41:51 PM WORKER: registered result for job (8, 0, 0) with dispatcher
+09/09 03:41:51 PM job (8, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 98, in compute
+    lr_scheduler = torch.optim.lr_schedular.ExponnetialLR(optimizer, gamma=0.1)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:51 PM WORKER: start processing job (9, 0, 0)
+09/09 03:41:51 PM gpu device = cuda:0
+09/09 03:41:51 PM config = {'drop_path_prob': 0.014432045754069334, 'grad_clip_value': 4, 'initial_lr': 7.768306254318435e-06, 'lr_scheduler': 'Cosine', 'n_conv_layers': 3, 'optimizer': 'sgd', 'weight_decay': 0.00016589783833816243, 'nesterov': 'False', 'sgd_momentum': 0.4109918427588826}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:52 PM param size = 0.118122MB
+Training size= 48000
+09/09 03:41:52 PM WORKER: registered result for job (9, 0, 0) with dispatcher
+09/09 03:41:52 PM job (9, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 109, in compute
+    sampler=training_sampler, shuffle=True)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 189, in __init__
+    raise ValueError('sampler option is mutually exclusive with '
+ValueError: sampler option is mutually exclusive with shuffle
+
+09/09 03:41:52 PM WORKER: start processing job (10, 0, 0)
+09/09 03:41:52 PM gpu device = cuda:0
+09/09 03:41:52 PM config = {'drop_path_prob': 0.33932647499172497, 'grad_clip_value': 6, 'initial_lr': 3.015798884507033e-06, 'lr_scheduler': 'Plateau', 'n_conv_layers': 6, 'optimizer': 'sgd', 'weight_decay': 0.00018283646899549326, 'nesterov': 'False', 'sgd_momentum': 0.4161551519960663}
+48 48 16
+48 64 16
+64 64 32
+64 128 32
+128 128 64
+128 256 64
+09/09 03:41:52 PM param size = 0.255930MB
+09/09 03:41:52 PM WORKER: registered result for job (10, 0, 0) with dispatcher
+09/09 03:41:52 PM job (10, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:52 PM WORKER: start processing job (11, 0, 0)
+09/09 03:41:52 PM gpu device = cuda:0
+09/09 03:41:52 PM config = {'drop_path_prob': 0.15498591532441255, 'grad_clip_value': 6, 'initial_lr': 5.6707205684007515e-06, 'lr_scheduler': 'Plateau', 'n_conv_layers': 3, 'optimizer': 'adad', 'weight_decay': 0.00012471497604349882}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:52 PM param size = 0.118122MB
+09/09 03:41:52 PM WORKER: registered result for job (11, 0, 0) with dispatcher
+09/09 03:41:52 PM job (11, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:52 PM WORKER: start processing job (12, 0, 0)
+09/09 03:41:52 PM gpu device = cuda:0
+09/09 03:41:52 PM config = {'drop_path_prob': 0.07467449110755893, 'grad_clip_value': 5, 'initial_lr': 0.007772026416406421, 'lr_scheduler': 'Cosine', 'n_conv_layers': 4, 'optimizer': 'adad', 'weight_decay': 6.577915037728042e-05}
+48 48 16
+48 64 32
+64 128 64
+128 256 64
+09/09 03:41:52 PM param size = 0.213546MB
+Training size= 48000
+09/09 03:41:52 PM WORKER: registered result for job (12, 0, 0) with dispatcher
+09/09 03:41:53 PM job (12, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 109, in compute
+    sampler=training_sampler, shuffle=True)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 189, in __init__
+    raise ValueError('sampler option is mutually exclusive with '
+ValueError: sampler option is mutually exclusive with shuffle
+
+09/09 03:41:53 PM WORKER: start processing job (13, 0, 0)
+09/09 03:41:53 PM gpu device = cuda:0
+09/09 03:41:53 PM config = {'drop_path_prob': 0.21675133307970837, 'grad_clip_value': 7, 'initial_lr': 0.0010877599616884175, 'lr_scheduler': 'Plateau', 'n_conv_layers': 5, 'optimizer': 'adad', 'weight_decay': 1.5231402618618771e-05}
+48 48 16
+48 64 32
+64 128 32
+128 128 64
+128 256 64
+09/09 03:41:53 PM param size = 0.245898MB
+09/09 03:41:53 PM WORKER: registered result for job (13, 0, 0) with dispatcher
+09/09 03:41:54 PM job (13, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:54 PM WORKER: start processing job (14, 0, 0)
+09/09 03:41:54 PM gpu device = cuda:0
+09/09 03:41:54 PM config = {'drop_path_prob': 0.3355449416555851, 'grad_clip_value': 6, 'initial_lr': 0.00768350838849312, 'lr_scheduler': 'Exponential', 'n_conv_layers': 3, 'optimizer': 'sgd', 'weight_decay': 2.3290269070417865e-05, 'nesterov': 'True', 'sgd_momentum': 0.7577080305549625}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:54 PM param size = 0.118122MB
+09/09 03:41:54 PM WORKER: registered result for job (14, 0, 0) with dispatcher
+09/09 03:41:54 PM job (14, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 98, in compute
+    lr_scheduler = torch.optim.lr_schedular.ExponnetialLR(optimizer, gamma=0.1)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:54 PM WORKER: start processing job (15, 0, 0)
+09/09 03:41:54 PM gpu device = cuda:0
+09/09 03:41:54 PM config = {'drop_path_prob': 0.033147202657368036, 'grad_clip_value': 5, 'initial_lr': 1.5929574283330562e-05, 'lr_scheduler': 'Cosine', 'n_conv_layers': 3, 'optimizer': 'adad', 'weight_decay': 2.3772192846996922e-05}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:54 PM param size = 0.118122MB
+Training size= 48000
+09/09 03:41:54 PM WORKER: registered result for job (15, 0, 0) with dispatcher
+09/09 03:41:54 PM job (15, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 109, in compute
+    sampler=training_sampler, shuffle=True)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 189, in __init__
+    raise ValueError('sampler option is mutually exclusive with '
+ValueError: sampler option is mutually exclusive with shuffle
+
+09/09 03:41:54 PM WORKER: start processing job (16, 0, 0)
+09/09 03:41:54 PM gpu device = cuda:0
+09/09 03:41:54 PM config = {'drop_path_prob': 0.2993347575142101, 'grad_clip_value': 7, 'initial_lr': 1.3904065333756486e-05, 'lr_scheduler': 'Exponential', 'n_conv_layers': 4, 'optimizer': 'adam', 'weight_decay': 0.0001633647874226245}
+48 48 16
+48 64 32
+64 128 64
+128 256 64
+09/09 03:41:54 PM param size = 0.213546MB
+09/09 03:41:54 PM WORKER: registered result for job (16, 0, 0) with dispatcher
+09/09 03:41:55 PM job (16, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 98, in compute
+    lr_scheduler = torch.optim.lr_schedular.ExponnetialLR(optimizer, gamma=0.1)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:55 PM WORKER: start processing job (17, 0, 0)
+09/09 03:41:55 PM gpu device = cuda:0
+09/09 03:41:55 PM config = {'drop_path_prob': 0.1168337456750781, 'grad_clip_value': 8, 'initial_lr': 0.004559220239036079, 'lr_scheduler': 'Cosine', 'n_conv_layers': 3, 'optimizer': 'sgd', 'weight_decay': 6.103580290658416e-05, 'nesterov': 'False', 'sgd_momentum': 0.861224700728106}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:55 PM param size = 0.118122MB
+Training size= 48000
+09/09 03:41:55 PM WORKER: registered result for job (17, 0, 0) with dispatcher
+09/09 03:41:55 PM job (17, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 109, in compute
+    sampler=training_sampler, shuffle=True)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 189, in __init__
+    raise ValueError('sampler option is mutually exclusive with '
+ValueError: sampler option is mutually exclusive with shuffle
+
+09/09 03:41:55 PM WORKER: start processing job (18, 0, 0)
+09/09 03:41:55 PM gpu device = cuda:0
+09/09 03:41:55 PM config = {'drop_path_prob': 0.07965911781866138, 'grad_clip_value': 6, 'initial_lr': 0.00013338635328746402, 'lr_scheduler': 'Exponential', 'n_conv_layers': 3, 'optimizer': 'adad', 'weight_decay': 4.146764668562334e-05}
+48 48 16
+48 64 32
+64 128 64
+09/09 03:41:55 PM param size = 0.118122MB
+09/09 03:41:55 PM WORKER: registered result for job (18, 0, 0) with dispatcher
+09/09 03:41:55 PM job (18, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 98, in compute
+    lr_scheduler = torch.optim.lr_schedular.ExponnetialLR(optimizer, gamma=0.1)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:55 PM WORKER: start processing job (19, 0, 0)
+09/09 03:41:55 PM gpu device = cuda:0
+09/09 03:41:55 PM config = {'drop_path_prob': 0.30100918670786675, 'grad_clip_value': 7, 'initial_lr': 0.0001560807281913978, 'lr_scheduler': 'Plateau', 'n_conv_layers': 5, 'optimizer': 'adad', 'weight_decay': 1.3254535588277266e-05}
+48 48 16
+48 64 32
+64 128 32
+128 128 64
+128 256 64
+09/09 03:41:55 PM param size = 0.245898MB
+09/09 03:41:55 PM WORKER: registered result for job (19, 0, 0) with dispatcher
+09/09 03:41:55 PM job (19, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 100, in compute
+    lr_scheduler = torch.optim.lr_schedular.ReduceLROnPlateau(optimizer)
+AttributeError: module 'torch.optim' has no attribute 'lr_schedular'
+
+09/09 03:41:56 PM DISPATCHER: Dispatcher shutting down
+09/09 03:41:56 PM DISPATCHER: shut down complete

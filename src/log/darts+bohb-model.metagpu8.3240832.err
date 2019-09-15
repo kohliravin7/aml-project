@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "darts-bohb.py", line 215, in <module>
+    run_bohb('01', 20)
+  File "darts-bohb.py", line 159, in run_bohb
+    utils.create_exp_dir(run_dir, scripts_to_save=glob.glob('*.py'))
+  File "/home/rkohli/aml-project/PC-DARTS/utils.py", line 117, in create_exp_dir
+    os.mkdir(os.path.join(path, 'scripts'))
+FileExistsError: [Errno 17] File exists: 'bohb-20-01/scripts'
