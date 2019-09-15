@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "darts-bohamiann.py", line 12, in <module>
+    from fmin.bohamiann import bohamiann
+  File "/home/rkohli/aml-project/src/fmin/bohamiann.py", line 15, in <module>
+    from utils import get_config_dictionary
+  File "/home/rkohli/aml-project/src/utils.py", line 160
+    with open(os.path.join(path, 'results.txt', 'w') as write:
+                                                      ^
+SyntaxError: invalid syntax

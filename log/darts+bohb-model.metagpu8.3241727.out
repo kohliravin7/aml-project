@@ -1,0 +1,295 @@
+Workingdir: /home/rkohli/aml-project/PC-DARTS
+Started at Mon Sep  9 15:11:34 CEST 2019
+Running job darts+bohb-model using 2 cpus per node with given JID 3241727 on queue meta_gpu-black
+Experiment dir : eval-EXP-20190909-151711
+Worker running
+09/09 03:18:21 PM DISPATCHER: started the 'discover_worker' thread
+09/09 03:18:21 PM WORKER: start listening for jobs
+09/09 03:18:21 PM DISPATCHER: started the 'job_runner' thread
+09/09 03:18:21 PM DISPATCHER: Pyro daemon running on 127.0.0.1:39583
+09/09 03:18:21 PM DISPATCHER: discovered new worker, hpbandster.run_01.worker.metagpu8.16578139650172438336
+09/09 03:18:21 PM HBMASTER: adjusted queue size to (0, 1)
+09/09 03:18:21 PM DISPATCHER: A new worker triggered discover_worker
+09/09 03:18:21 PM HBMASTER: starting run at 1568035101.935445
+09/09 03:18:22 PM WORKER: start processing job (0, 0, 0)
+09/09 03:18:22 PM gpu device = cuda:0
+09/09 03:18:22 PM config = {'drop_path_prob': 0.30220975336405237, 'grad_clip_value': 5, 'initial_lr': 2.6730624665756413e-06, 'n_conv_layers': 3, 'optimizer': 'sgd', 'scheduler': 'Cosine', 'weight_decay': 9.78432237771606e-05, 'nesterov': 'True', 'sgd_momentum': 0.5888084123904007}
+09/09 03:18:23 PM WORKER: registered result for job (0, 0, 0) with dispatcher
+09/09 03:18:23 PM job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:23 PM WORKER: start processing job (1, 0, 0)
+09/09 03:18:23 PM gpu device = cuda:0
+09/09 03:18:23 PM config = {'drop_path_prob': 0.04541134809598107, 'grad_clip_value': 7, 'initial_lr': 0.00010907661416107365, 'n_conv_layers': 3, 'optimizer': 'adam', 'scheduler': 'Plateau', 'weight_decay': 0.0005269528262975348}
+09/09 03:18:23 PM WORKER: registered result for job (1, 0, 0) with dispatcher
+09/09 03:18:24 PM job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:24 PM WORKER: start processing job (2, 0, 0)
+09/09 03:18:24 PM gpu device = cuda:0
+09/09 03:18:24 PM config = {'drop_path_prob': 0.09090913284155566, 'grad_clip_value': 7, 'initial_lr': 2.0959533169566195e-06, 'n_conv_layers': 5, 'optimizer': 'adad', 'scheduler': 'Exponential', 'weight_decay': 5.6045877027219636e-05}
+09/09 03:18:24 PM WORKER: registered result for job (2, 0, 0) with dispatcher
+09/09 03:18:24 PM job (2, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:24 PM WORKER: start processing job (3, 0, 0)
+09/09 03:18:24 PM gpu device = cuda:0
+09/09 03:18:24 PM config = {'drop_path_prob': 0.2588428321094055, 'grad_clip_value': 7, 'initial_lr': 0.01884290913846007, 'n_conv_layers': 5, 'optimizer': 'adad', 'scheduler': 'Exponential', 'weight_decay': 0.00011376220532271842}
+09/09 03:18:24 PM WORKER: registered result for job (3, 0, 0) with dispatcher
+09/09 03:18:24 PM job (3, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:24 PM WORKER: start processing job (4, 0, 0)
+09/09 03:18:24 PM gpu device = cuda:0
+09/09 03:18:24 PM config = {'drop_path_prob': 0.2638551826564614, 'grad_clip_value': 8, 'initial_lr': 0.020795974802996386, 'n_conv_layers': 5, 'optimizer': 'adam', 'scheduler': 'Plateau', 'weight_decay': 5.9142194926997595e-05}
+09/09 03:18:24 PM WORKER: registered result for job (4, 0, 0) with dispatcher
+09/09 03:18:24 PM job (4, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:24 PM WORKER: start processing job (5, 0, 0)
+09/09 03:18:24 PM gpu device = cuda:0
+09/09 03:18:24 PM config = {'drop_path_prob': 0.11119625200946048, 'grad_clip_value': 7, 'initial_lr': 1.1432938466732487e-06, 'n_conv_layers': 5, 'optimizer': 'sgd', 'scheduler': 'Cosine', 'weight_decay': 5.856876299048281e-05, 'nesterov': 'False', 'sgd_momentum': 0.9741787827093077}
+09/09 03:18:24 PM WORKER: registered result for job (5, 0, 0) with dispatcher
+09/09 03:18:24 PM job (5, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:24 PM WORKER: start processing job (6, 0, 0)
+09/09 03:18:24 PM gpu device = cuda:0
+09/09 03:18:24 PM config = {'drop_path_prob': 0.3852930947506704, 'grad_clip_value': 4, 'initial_lr': 1.4589015305370936e-06, 'n_conv_layers': 4, 'optimizer': 'sgd', 'scheduler': 'Exponential', 'weight_decay': 0.0007228432609957946, 'nesterov': 'True', 'sgd_momentum': 0.7766672803488912}
+09/09 03:18:24 PM WORKER: registered result for job (6, 0, 0) with dispatcher
+09/09 03:18:24 PM job (6, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:25 PM WORKER: start processing job (7, 0, 0)
+09/09 03:18:25 PM gpu device = cuda:0
+09/09 03:18:25 PM config = {'drop_path_prob': 0.35011651710973096, 'grad_clip_value': 4, 'initial_lr': 0.00043121694482470914, 'n_conv_layers': 5, 'optimizer': 'adam', 'scheduler': 'Cosine', 'weight_decay': 0.0002763358711654073}
+09/09 03:18:25 PM WORKER: registered result for job (7, 0, 0) with dispatcher
+09/09 03:18:25 PM job (7, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:25 PM WORKER: start processing job (8, 0, 0)
+09/09 03:18:25 PM gpu device = cuda:0
+09/09 03:18:25 PM config = {'drop_path_prob': 0.015255938297792149, 'grad_clip_value': 5, 'initial_lr': 5.14579309646942e-05, 'n_conv_layers': 4, 'optimizer': 'adad', 'scheduler': 'Cosine', 'weight_decay': 9.821302546326854e-05}
+09/09 03:18:25 PM WORKER: registered result for job (8, 0, 0) with dispatcher
+09/09 03:18:25 PM job (8, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:25 PM WORKER: start processing job (9, 0, 0)
+09/09 03:18:25 PM gpu device = cuda:0
+09/09 03:18:25 PM config = {'drop_path_prob': 0.3105070483188159, 'grad_clip_value': 6, 'initial_lr': 1.147734406748428e-06, 'n_conv_layers': 6, 'optimizer': 'adam', 'scheduler': 'Cosine', 'weight_decay': 2.6601666398636148e-05}
+09/09 03:18:25 PM WORKER: registered result for job (9, 0, 0) with dispatcher
+09/09 03:18:25 PM job (9, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:25 PM WORKER: start processing job (10, 0, 0)
+09/09 03:18:25 PM gpu device = cuda:0
+09/09 03:18:25 PM config = {'drop_path_prob': 0.11198861220648744, 'grad_clip_value': 5, 'initial_lr': 0.00025259361226561024, 'n_conv_layers': 6, 'optimizer': 'adam', 'scheduler': 'Exponential', 'weight_decay': 1.193618893286288e-05}
+09/09 03:18:25 PM WORKER: registered result for job (10, 0, 0) with dispatcher
+09/09 03:18:26 PM job (10, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:26 PM WORKER: start processing job (11, 0, 0)
+09/09 03:18:26 PM gpu device = cuda:0
+09/09 03:18:26 PM config = {'drop_path_prob': 0.05503966053139364, 'grad_clip_value': 5, 'initial_lr': 0.012077307907236347, 'n_conv_layers': 3, 'optimizer': 'sgd', 'scheduler': 'Cosine', 'weight_decay': 0.00028058084026956573, 'nesterov': 'True', 'sgd_momentum': 0.19995743955695935}
+09/09 03:18:26 PM WORKER: registered result for job (11, 0, 0) with dispatcher
+09/09 03:18:26 PM job (11, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:26 PM WORKER: start processing job (12, 0, 0)
+09/09 03:18:26 PM gpu device = cuda:0
+09/09 03:18:26 PM config = {'drop_path_prob': 0.36020189510857703, 'grad_clip_value': 4, 'initial_lr': 8.42541979737746e-05, 'n_conv_layers': 3, 'optimizer': 'adam', 'scheduler': 'Plateau', 'weight_decay': 0.0007369212228626182}
+09/09 03:18:26 PM WORKER: registered result for job (12, 0, 0) with dispatcher
+09/09 03:18:26 PM job (12, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:26 PM WORKER: start processing job (13, 0, 0)
+09/09 03:18:26 PM gpu device = cuda:0
+09/09 03:18:26 PM config = {'drop_path_prob': 0.3795736507089018, 'grad_clip_value': 8, 'initial_lr': 0.0008738094610909423, 'n_conv_layers': 3, 'optimizer': 'adad', 'scheduler': 'Plateau', 'weight_decay': 7.069850698242156e-05}
+09/09 03:18:26 PM WORKER: registered result for job (13, 0, 0) with dispatcher
+09/09 03:18:26 PM job (13, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:26 PM WORKER: start processing job (14, 0, 0)
+09/09 03:18:26 PM gpu device = cuda:0
+09/09 03:18:26 PM config = {'drop_path_prob': 0.020569858042016966, 'grad_clip_value': 4, 'initial_lr': 0.02579938695823096, 'n_conv_layers': 5, 'optimizer': 'adam', 'scheduler': 'Cosine', 'weight_decay': 5.960680772868525e-05}
+09/09 03:18:26 PM WORKER: registered result for job (14, 0, 0) with dispatcher
+09/09 03:18:26 PM job (14, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:26 PM WORKER: start processing job (15, 0, 0)
+09/09 03:18:26 PM gpu device = cuda:0
+09/09 03:18:26 PM config = {'drop_path_prob': 0.09099320785917807, 'grad_clip_value': 8, 'initial_lr': 1.5210909433767384e-06, 'n_conv_layers': 6, 'optimizer': 'adad', 'scheduler': 'Plateau', 'weight_decay': 8.205851701864672e-05}
+09/09 03:18:26 PM WORKER: registered result for job (15, 0, 0) with dispatcher
+09/09 03:18:26 PM job (15, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:27 PM WORKER: start processing job (16, 0, 0)
+09/09 03:18:27 PM gpu device = cuda:0
+09/09 03:18:27 PM config = {'drop_path_prob': 0.1990176207881411, 'grad_clip_value': 5, 'initial_lr': 0.001480478221664704, 'n_conv_layers': 6, 'optimizer': 'adad', 'scheduler': 'Plateau', 'weight_decay': 1.2703402335189118e-05}
+09/09 03:18:27 PM WORKER: registered result for job (16, 0, 0) with dispatcher
+09/09 03:18:27 PM job (16, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:27 PM WORKER: start processing job (17, 0, 0)
+09/09 03:18:27 PM gpu device = cuda:0
+09/09 03:18:27 PM config = {'drop_path_prob': 0.3348986510805283, 'grad_clip_value': 8, 'initial_lr': 0.01937459375811796, 'n_conv_layers': 4, 'optimizer': 'sgd', 'scheduler': 'Cosine', 'weight_decay': 0.0004500223397721024, 'nesterov': 'False', 'sgd_momentum': 0.14796566430404945}
+09/09 03:18:27 PM WORKER: registered result for job (17, 0, 0) with dispatcher
+09/09 03:18:27 PM job (17, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:27 PM WORKER: start processing job (18, 0, 0)
+09/09 03:18:27 PM gpu device = cuda:0
+09/09 03:18:27 PM config = {'drop_path_prob': 0.12482791711191679, 'grad_clip_value': 5, 'initial_lr': 0.04436756172661648, 'n_conv_layers': 5, 'optimizer': 'adad', 'scheduler': 'Exponential', 'weight_decay': 1.337296071742036e-05}
+09/09 03:18:27 PM WORKER: registered result for job (18, 0, 0) with dispatcher
+09/09 03:18:27 PM job (18, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:27 PM WORKER: start processing job (19, 0, 0)
+09/09 03:18:27 PM gpu device = cuda:0
+09/09 03:18:27 PM config = {'drop_path_prob': 0.10482324252922788, 'grad_clip_value': 5, 'initial_lr': 0.00027319550555491526, 'n_conv_layers': 5, 'optimizer': 'sgd', 'scheduler': 'Plateau', 'weight_decay': 0.0006898285336472736, 'nesterov': 'False', 'sgd_momentum': 0.07793536712352153}
+09/09 03:18:27 PM WORKER: registered result for job (19, 0, 0) with dispatcher
+09/09 03:18:27 PM job (19, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "darts-bohb.py", line 78, in compute
+    model = Network(self.init_channels, self.n_classes, config['n_conv_layers'], genotype)
+  File "/home/rkohli/aml-project/PC-DARTS/model.py", line 220, in __init__
+    self._auxiliary = auxiliary
+NameError: name 'auxiliary' is not defined
+
+09/09 03:18:28 PM DISPATCHER: Dispatcher shutting down
+09/09 03:18:28 PM DISPATCHER: shut down complete

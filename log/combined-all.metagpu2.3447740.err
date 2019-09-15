@@ -1,0 +1,9 @@
+INFO:root:gpu device = cuda:0
+Traceback (most recent call last):
+  File "main.py", line 277, in <module>
+    save_model_str=get('run_dir'))
+  File "main.py", line 208, in create_run_ensemble
+    model.load_state_dict(torch.load(model_description[model_state]['model_path']))
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/serialization.py", line 381, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/stored_models/T_h_u_ _S_e_p_ _1_2_ _2_1_:_5_2_:_5_0_ _2_0_1_9_BOHB'

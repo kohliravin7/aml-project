@@ -1,0 +1,4 @@
+Workingdir: /home/rkohli/aml-project/src
+Started at Tue Sep 10 18:34:14 CEST 2019
+Running job combned using 2 cpus per node with given JID 3288309 on queue meta_gpu-black
+Experiment dir : eval-EXP-20190910-183420

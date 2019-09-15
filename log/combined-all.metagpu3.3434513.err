@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "main.py", line 267, in <module>
+    model_description['es']['config'] = es_worker.run_es(iterations=40) 
+  File "/home/rkohli/aml-project/src/darts_es.py", line 158, in run_es
+    cs = self.__class__.get_configspace()
+  File "/home/rkohli/aml-project/src/darts_es.py", line 146, in get_configspace
+    optimizer = CSH.CategoricalHyperparameter('optimizer', get(['opti_dict']).keys())
+  File "/home/rkohli/aml-project/src/settings.py", line 19, in get
+    if variable in settings.keys():
+TypeError: unhashable type: 'list'

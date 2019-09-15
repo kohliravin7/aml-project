@@ -1,0 +1,8 @@
+usage: cifar [-h] [--data DATA] [--set SET] [--batch_size BATCH_SIZE]
+             [--learning_rate LEARNING_RATE] [--momentum MOMENTUM]
+             [--weight_decay WEIGHT_DECAY] [--report_freq REPORT_FREQ]
+             [--gpu GPU] [--epochs EPOCHS] [--init_channels INIT_CHANNELS]
+             [--layers LAYERS] [--model_path MODEL_PATH] [--cutout]
+             [--cutout_length CUTOUT_LENGTH] [--drop_path_prob DROP_PATH_PROB]
+             [--save SAVE] [--seed SEED] [--arch ARCH] [--grad_clip GRAD_CLIP]
+cifar: error: unrecognized arguments: -n 1

@@ -1,0 +1,4 @@
+Workingdir: /home/rkohli/aml-project/PC-DARTS
+Started at Mon Sep  9 20:17:40 CEST 2019
+Running job darts+es-model using 2 cpus per node with given JID 3250958 on queue meta_gpu-black
+Experiment dir : eval-EXP-20190909-201941

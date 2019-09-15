@@ -1,0 +1,20 @@
+INFO:root:gpu device = cuda:0
+/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:82: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule.See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+INFO:root:epoch 0 lr 1.987688e-02
+Traceback (most recent call last):
+  File "main.py", line 278, in <module>
+    save_model_str=get('run_dir'))
+  File "main.py", line 227, in create_run_ensemble
+    train_acc, train_obj = train(train_loader, ensemble_model, criterion, optimizer, grad_clip=5)
+  File "/home/rkohli/aml-project/src/train.py", line 128, in train
+    logits = model(input)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rkohli/aml-project/src/model.py", line 272, in forward
+    class_out = self.classifiers[i].forward(model_out)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py", line 1369, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: Expected object of backend CPU but got backend CUDA for argument #4 'mat1'

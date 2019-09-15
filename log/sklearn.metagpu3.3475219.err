@@ -1,0 +1,19 @@
+INFO:root:gpu device = cuda:0
+Traceback (most recent call last):
+  File "main.py", line 375, in <module>
+    save_model_str=get('run_dir'))
+  File "main.py", line 323, in create_run_ensemble_sklearn
+    ensemble_model.fit(X_train, y_train)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/sklearn/ensemble/voting.py", line 275, in fit
+    self.le_ = LabelEncoder().fit(y)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/sklearn/preprocessing/label.py", line 219, in fit
+    y = column_or_1d(y, warn=True)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/sklearn/utils/validation.py", line 751, in column_or_1d
+    return np.ravel(y)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/numpy/core/fromnumeric.py", line 1687, in ravel
+    return asanyarray(a).ravel(order=order)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/numpy/core/numeric.py", line 591, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/torch/tensor.py", line 412, in __array__
+    return self.numpy()
+TypeError: can't convert CUDA tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

@@ -1,0 +1,8 @@
+Workingdir: /home/rkohli/aml-project/src
+Started at Tue Sep 10 18:50:49 CEST 2019
+Running job combned using 2 cpus per node with given JID 3289083 on queue meta_gpu-black
+Experiment dir : eval-EXP-20190910-185113
+Experiment dir : ./EXP0/EXP-20190910-185256
+09/10 06:52:56 PM gpu device = cuda:0
+09/10 06:52:56 PM args = {'data': './data', 'set': 'cifar10', 'batch_size': 32, 'learning_rate': 0.1, 'learning_rate_min': 0.001, 'momentum': 0.9, 'weight_decay': 0.0003, 'report_freq': 50, 'gpu': 'cuda:0', 'epochs': 20, 'init_channels': 8, 'layers': 4, 'model_path': 'saved_models', 'cutout': False, 'cutout_length': 16, 'drop_path_prob': 0.3, 'save': './EXP0/EXP-20190910-185256', 'seed': 0, 'grad_clip': 5, 'train_portion': 0.5, 'unrolled': False, 'arch_learning_rate': 0.0006, 'arch_weight_decay': 0.001}
+09/10 06:53:21 PM param size = 0.056538MB

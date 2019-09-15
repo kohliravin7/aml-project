@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "darts-es.py", line 12, in <module>
+    from fmin.entropy_search import entropy_search
+  File "/home/rkohli/aml-project/PC-DARTS/fmin/entropy_search.py", line 18, in <module>
+    from utils import get_config_dictionary
+  File "/home/rkohli/aml-project/PC-DARTS/utils.py", line 160
+    with open(os.path.join(path, 'results.txt', 'w') as write:
+                                                      ^
+SyntaxError: invalid syntax

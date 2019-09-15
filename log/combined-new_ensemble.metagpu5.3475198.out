@@ -1,0 +1,22 @@
+Workingdir: /home/rkohli/aml-project/src
+Started at Sat Sep 14 19:07:00 CEST 2019
+Running job combined-new_ensemble using 2 cpus per node with given JID 3475198 on queue meta_gpu-black
+time taken =4.291534423828125e-06 s
+24 24 8
+24 32 16
+32 64 16
+64 64 32
+64 128 32
+24 24 8
+24 32 8
+32 32 16
+32 64 16
+64 64 32
+64 128 32
+24 24 8
+24 32 8
+32 32 16
+32 64 16
+64 64 32
+64 128 32
+Started Training

@@ -1,0 +1,8 @@
+Workingdir: /home/rkohli/aml-project/src
+Started at Thu Sep 12 20:54:55 CEST 2019
+Running job combined-all using 2 cpus per node with given JID 3427302 on queue meta_gpu-black
+24 24 8
+24 32 16
+32 64 16
+64 64 32
+64 128 32

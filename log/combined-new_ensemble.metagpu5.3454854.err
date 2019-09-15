@@ -1,0 +1,2 @@
+INFO:root:gpu device = cuda:0
+/var/spool/slurm-llnl/job3454854/slurm_script: line 16: 18664 Segmentation fault      (core dumped) python main.py

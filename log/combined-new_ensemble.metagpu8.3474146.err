@@ -1,0 +1,442 @@
+INFO:hpbandster:DISPATCHER: started the 'discover_worker' thread
+INFO:hpbandster:DISPATCHER: started the 'job_runner' thread
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start listening for jobs
+INFO:hpbandster:DISPATCHER: Pyro daemon running on 127.0.0.1:39415
+INFO:hpbandster:DISPATCHER: A new worker triggered discover_worker
+INFO:hpbandster:DISPATCHER: discovered new worker, hpbandster.run_1.worker.metagpu8.6196140127011792704
+INFO:hpbandster:HBMASTER: adjusted queue size to (0, 1)
+INFO:hpbandster:DISPATCHER: A new worker triggered discover_worker
+INFO:hpbandster:HBMASTER: starting run at 1568456533.7631211
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (0, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 193, 'drop_path_prob': 0.33430356730943595, 'grad_clip_value': 8, 'initial_lr': 0.003884277300062089, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 1.870649062564866e-05}
+INFO:root:param size = 0.028420MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (0, 0, 0) with dispatcher
+WARNING:hpbandster:job (0, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (0, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 190, 'drop_path_prob': 0.16991569085658487, 'grad_clip_value': 4, 'initial_lr': 0.023202741204631495, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 1.0199933403890706e-05, 'nesterov': 'False', 'sgd_momentum': 0.2073902622800619}
+INFO:root:param size = 0.027979MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (0, 0, 1) with dispatcher
+WARNING:hpbandster:job (0, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (0, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 70, 'drop_path_prob': 0.3102390039045679, 'grad_clip_value': 6, 'initial_lr': 0.009784216447594845, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 0.0009255402609799585, 'nesterov': 'False', 'sgd_momentum': 0.8810590212573224}
+INFO:root:param size = 0.010339MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (0, 1, 0) with dispatcher
+WARNING:hpbandster:job (0, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (1, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 108, 'drop_path_prob': 0.07749542635625116, 'grad_clip_value': 6, 'initial_lr': 0.005227492681846907, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 0.0003647574787166824, 'nesterov': 'False', 'sgd_momentum': 0.3032905922926259}
+INFO:root:param size = 0.015925MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (1, 0, 0) with dispatcher
+WARNING:hpbandster:job (1, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (1, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 107, 'drop_path_prob': 0.03442009950139675, 'grad_clip_value': 5, 'initial_lr': 0.0014694754841344027, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 0.0008656680799425741}
+INFO:root:param size = 0.015778MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (1, 0, 1) with dispatcher
+WARNING:hpbandster:job (1, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (2, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 162, 'drop_path_prob': 0.2154976028194942, 'grad_clip_value': 5, 'initial_lr': 0.039897033027102645, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 8.641166834200535e-05}
+INFO:root:param size = 0.023863MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (2, 0, 0) with dispatcher
+WARNING:hpbandster:job (2, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (2, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 228, 'drop_path_prob': 0.1284939263362773, 'grad_clip_value': 4, 'initial_lr': 0.08897854005639791, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.750805021712448e-05, 'nesterov': 'False', 'sgd_momentum': 0.26993288736092835}
+INFO:root:param size = 0.033565MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (2, 0, 1) with dispatcher
+WARNING:hpbandster:job (2, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (2, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 173, 'drop_path_prob': 0.26653120934629965, 'grad_clip_value': 4, 'initial_lr': 0.0019298292728350782, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 0.0009505537664265314}
+INFO:root:param size = 0.025480MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (2, 1, 0) with dispatcher
+WARNING:hpbandster:job (2, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (3, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 173, 'drop_path_prob': 0.05286890354655478, 'grad_clip_value': 7, 'initial_lr': 0.012752214993806268, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 0.00015241319415117168}
+INFO:root:param size = 0.025480MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (3, 0, 0) with dispatcher
+WARNING:hpbandster:job (3, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (3, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 208, 'drop_path_prob': 0.2942049504970184, 'grad_clip_value': 4, 'initial_lr': 0.00486619397268455, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 3.228801088741576e-05}
+INFO:root:param size = 0.030625MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (3, 0, 1) with dispatcher
+WARNING:hpbandster:job (3, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (4, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 238, 'drop_path_prob': 0.13440803894952377, 'grad_clip_value': 5, 'initial_lr': 0.02712493843921491, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 0.00046445177454610277}
+INFO:root:param size = 0.035035MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (4, 0, 0) with dispatcher
+WARNING:hpbandster:job (4, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (4, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 255, 'drop_path_prob': 0.19298233797527128, 'grad_clip_value': 6, 'initial_lr': 0.00438558736119626, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 0.0001575922227956693, 'nesterov': 'True', 'sgd_momentum': 0.37613656683701635}
+INFO:root:param size = 0.037534MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (4, 0, 1) with dispatcher
+WARNING:hpbandster:job (4, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (4, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 212, 'drop_path_prob': 0.3146900658857792, 'grad_clip_value': 6, 'initial_lr': 0.09461881738626124, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 0.00012467572925438248, 'nesterov': 'True', 'sgd_momentum': 0.9125714221712893}
+INFO:root:param size = 0.031213MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (4, 1, 0) with dispatcher
+WARNING:hpbandster:job (4, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (5, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 75, 'drop_path_prob': 0.03350482387985592, 'grad_clip_value': 5, 'initial_lr': 0.032263952854253236, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 1.192723274938556e-05, 'nesterov': 'True', 'sgd_momentum': 0.9291956594991413}
+INFO:root:param size = 0.011074MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (5, 0, 0) with dispatcher
+WARNING:hpbandster:job (5, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (5, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 64, 'drop_path_prob': 0.1848591370283768, 'grad_clip_value': 7, 'initial_lr': 0.009161264426607163, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 0.0001832756200528523, 'nesterov': 'True', 'sgd_momentum': 0.0758176395881093}
+INFO:root:param size = 0.009457MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (5, 0, 1) with dispatcher
+WARNING:hpbandster:job (5, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (6, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 136, 'drop_path_prob': 0.2606366102877361, 'grad_clip_value': 8, 'initial_lr': 0.05586996038748055, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 5.313826936506065e-05, 'nesterov': 'False', 'sgd_momentum': 0.5647967987556022}
+INFO:root:param size = 0.020041MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (6, 0, 0) with dispatcher
+WARNING:hpbandster:job (6, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (6, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 202, 'drop_path_prob': 0.15626277285000365, 'grad_clip_value': 8, 'initial_lr': 0.041126908061375415, 'lr_scheduler': 'Cosine', 'optimizer': 'adad', 'weight_decay': 8.183927378104144e-05}
+INFO:root:param size = 0.029743MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (6, 0, 1) with dispatcher
+WARNING:hpbandster:job (6, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (6, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 127, 'drop_path_prob': 0.1817543421715777, 'grad_clip_value': 7, 'initial_lr': 0.0016066066831185895, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 0.0004390337342263323}
+INFO:root:param size = 0.018718MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (6, 1, 0) with dispatcher
+WARNING:hpbandster:job (6, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (7, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 144, 'drop_path_prob': 0.39126767730208334, 'grad_clip_value': 4, 'initial_lr': 0.0023301753160926953, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 0.00027320377189924447}
+INFO:root:param size = 0.021217MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (7, 0, 0) with dispatcher
+WARNING:hpbandster:job (7, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (7, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 182, 'drop_path_prob': 0.1672141268402434, 'grad_clip_value': 7, 'initial_lr': 0.0010333463181396942, 'lr_scheduler': 'Cosine', 'optimizer': 'sgd', 'weight_decay': 0.0005180577236422955, 'nesterov': 'False', 'sgd_momentum': 0.11463079643003979}
+INFO:root:param size = 0.026803MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (7, 0, 1) with dispatcher
+WARNING:hpbandster:job (7, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (8, 0, 0)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 196, 'drop_path_prob': 0.04172392311543223, 'grad_clip_value': 4, 'initial_lr': 0.02453241437777306, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 7.638180542340417e-05}
+INFO:root:param size = 0.028861MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (8, 0, 0) with dispatcher
+WARNING:hpbandster:job (8, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (8, 0, 1)
+INFO:root:Running config for 3.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 244, 'drop_path_prob': 0.0710720132635545, 'grad_clip_value': 5, 'initial_lr': 0.001997058444380892, 'lr_scheduler': 'Exponential', 'optimizer': 'adam', 'weight_decay': 0.00039876575757980947}
+INFO:root:param size = 0.035917MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (8, 0, 1) with dispatcher
+WARNING:hpbandster:job (8, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (8, 1, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 182, 'drop_path_prob': 0.17266738490463684, 'grad_clip_value': 6, 'initial_lr': 0.07347122481965884, 'lr_scheduler': 'Exponential', 'optimizer': 'sgd', 'weight_decay': 0.0003750321590844223, 'nesterov': 'True', 'sgd_momentum': 0.6892667375405556}
+INFO:root:param size = 0.026803MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (8, 1, 0) with dispatcher
+WARNING:hpbandster:job (8, 1, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (9, 0, 0)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 135, 'drop_path_prob': 0.03374536256507406, 'grad_clip_value': 5, 'initial_lr': 0.04754254953501127, 'lr_scheduler': 'Exponential', 'optimizer': 'adad', 'weight_decay': 1.9799358928359847e-05}
+INFO:root:param size = 0.019894MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (9, 0, 0) with dispatcher
+WARNING:hpbandster:job (9, 0, 0) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: start processing job (9, 0, 1)
+INFO:root:Running config for 6.0 epochs
+INFO:root:gpu device = cuda:0
+INFO:root:config = {'dense_units': 64, 'drop_path_prob': 0.3345020175555325, 'grad_clip_value': 6, 'initial_lr': 0.012649333251744036, 'lr_scheduler': 'Cosine', 'optimizer': 'adam', 'weight_decay': 0.00013848579774359814}
+INFO:root:param size = 0.009457MB
+INFO:hpbandster.run_1.worker.metagpu8.6196:WORKER: registered result for job (9, 0, 1) with dispatcher
+WARNING:hpbandster:job (9, 0, 1) failed with exception
+Traceback (most recent call last):
+  File "/home/rkohli/anaconda3/lib/python3.7/site-packages/hpbandster/core/worker.py", line 206, in start_computation
+    result = {'result': self.compute(*args, config_id=id, **kwargs),
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 117, in compute
+    indices = list(np.random.randint(0, 2*len(self.train_dataset)/3, size=len(self.train_dataset)/3))#list(range(int(self.split*len(self.train_dataset))))
+  File "mtrand.pyx", line 994, in mtrand.RandomState.randint
+  File "mtrand.pyx", line 995, in mtrand.RandomState.randint
+  File "randint_helpers.pxi", line 253, in mtrand._rand_int64
+TypeError: 'float' object cannot be interpreted as an integer
+
+INFO:hpbandster:DISPATCHER: Dispatcher shutting down
+INFO:hpbandster:DISPATCHER: shut down complete
+Traceback (most recent call last):
+  File "main.py", line 284, in <module>
+    ensemble_config = run_bohb_ensemble(exp_name=1, model_description=model_description, iterations=10)
+  File "/home/rkohli/aml-project/src/bohb_ensemble.py", line 227, in run_bohb_ensemble
+    best_config = id2conf[best_run]['config']
+KeyError: None

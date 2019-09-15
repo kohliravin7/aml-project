@@ -1,0 +1,9 @@
+INFO:root:gpu device = cuda:0
+Traceback (most recent call last):
+  File "main.py", line 278, in <module>
+    save_model_str=get('run_dir'))
+  File "main.py", line 214, in create_run_ensemble
+    model = EnsembleModel(trained_models, dense_units=128, out_size=train_dataset.n_classes)
+  File "/home/rkohli/aml-project/src/model.py", line 263, in __init__
+    for i in len(self.models):
+TypeError: 'int' object is not iterable
