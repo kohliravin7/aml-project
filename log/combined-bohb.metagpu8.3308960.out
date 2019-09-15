@@ -1,5 +1,0 @@
-Workingdir: /home/rkohli/aml-project/src
-Started at Wed Sep 11 00:59:37 CEST 2019
-Running job combined-bohb using 2 cpus per node with given JID 3308960 on queue meta_gpu-black
-Experiment dir : eval-EXP-20190911-005945
-09/11 12:59:57 AM WORKER: start listening for jobs

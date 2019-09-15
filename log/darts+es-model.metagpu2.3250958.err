@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "darts-es.py", line 175, in <module>
-    worker.run_es()
-  File "darts-es.py", line 165, in run_es
-    os.mkdir(log_dir)
-FileNotFoundError: [Errno 2] No such file or directory: './es/EXP0'

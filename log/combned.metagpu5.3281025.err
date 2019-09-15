@@ -1,4 +1,0 @@
-  File "main.py", line 295
-    exp_dir = f'{exp_name}'')
-                            ^
-SyntaxError: EOL while scanning string literal

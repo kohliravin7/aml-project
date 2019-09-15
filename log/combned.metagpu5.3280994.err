@@ -1,4 +1,0 @@
-  File "main.py", line 250
-    torch.save(model.state_dict(), os.path.join(save_model_str, time.ctime()))) 
-                                                                              ^
-SyntaxError: invalid syntax

@@ -1,7 +1,0 @@
-INFO:root:gpu device = cuda:0
-Traceback (most recent call last):
-  File "main.py", line 374, in <module>
-    save_model_str=get('run_dir'))
-  File "main.py", line 319, in create_run_ensemble_sklearn
-    ensemble_model = VotingClassifier(estimators=([('model_{}'.format(model),model) for model in trained_models.append]), voting='hard')
-TypeError: 'builtin_function_or_method' object is not iterable

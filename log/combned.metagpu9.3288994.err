@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "main.py", line 14, in <module>
-    from train_search import darts
-  File "/home/rkohli/aml-project/src/train_search.py", line 98
-    if args['epochs-epoch<=1:
-                            ^
-SyntaxError: EOL while scanning string literal
